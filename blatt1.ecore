@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="blatt1" nsURI="http://www.example.org/blatt1" nsPrefix="blatt1">
+  <eClassifiers xsi:type="ecore:EClass" name="ComponentBasedSystem">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="using" lowerBound="1" upperBound="3"
+        eType="#//ViewPoint"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ViewPoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="consists" lowerBound="1"
+        upperBound="4" eType="#//ViewType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ViewType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SystemIndependent" eSuperTypes="#//ViewPoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showsReusedCompIfaces"
+        lowerBound="1" eType="#//Repository"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Repository" eSuperTypes="#//ViewType">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1"
+        eType="#//Interface" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assembly" eSuperTypes="#//ViewPoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showsCompInstanciation"
+        lowerBound="1" eType="#//Assembly.1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Assembly" eSuperTypes="#//ViewType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Deployment" eSuperTypes="#//ViewPoint">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showsContainersAndLinks"
+        lowerBound="1" eType="#//Environment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="showsAllocCompInWhichContainer"
+        lowerBound="1" eType="#//Allocation"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Environment" eSuperTypes="#//ViewType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Allocation" eSuperTypes="#//ViewType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Interface">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
+  </eClassifiers>
+</ecore:EPackage>
