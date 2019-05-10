@@ -1,0 +1,46 @@
+context <Component>
+inv ProvidedServiceSignature:
+self.providedInterfaces -> forAll(i | self.providedServices-> exists(s |s.corresponds = i.signature))
+
+context <Service>
+inv IdenticlalSignatures:
+//not two constraints, but one "isIdentical" function, as we concider this to be one constraint that depends on the definition of "identical"
+let isIdentical(s, t) : s.params = t.params and s.returnType = t.returnType
+self.corresponds -> forall(s | self.corresponds -> forAll(t | isIdentical(s, t)))
+
+context <Service>
+inv RequiredIsRequired:
+//ist es richtig, dass services componenten requirern? wenn nicht -> das hier in context <Component> mit self.services->forall ... formulieren
+self.requiredComponent.requiredInterfaces->collect(signature)->asSet()->includes(self.corresponds)
+
+context <System>
+inv AllocationContextSpecifiesAssemblyAllocation:
+self.allocationContext.specifiedAssemblies = self.encapsulatedAssemblies
+
+context <System>
+inv AllocationOnCorrespondingEnvironment:
+self.allocationContext.specifiedContainers -> forAll(c | self.environment->includes(c))
+
+context <System>
+inv AllocationContextAssemblyContainer:
+self.allocationContext.specifiedContainers -> forall(c | self.encapsulatedAssemblies.collect(isAllocatedOn) -> includes(c))
+
+context <System>
+inv AssemblyContainerAllocationContext:
+self.encapsulatedAssemblies.collect(isAllocatedOn) -> forall(c | self.allocationContext.specifiedContainers  -> includes(c))
+
+context<CompositeComponent>
+inv NoAllocation:
+self.encapsulatedAssemblies.collect(isAllocatedOn).size = 0
+
+context<AssemblyConnector>
+inv RequiredRolesFromAssemblies:
+self.requiredRole = self.requiredAssembly.reuiredRole
+
+context<AssemblyConnector>
+inv ProvidedRolesFromAssemblies:
+self.providedRole = self.providedAssembly.providedRole
+
+context<AssemblyConnector>
+inv RolesOnSameOrLinkedContainer:
+self.providedAssembly.isAllocatedOn = self.requiredAssembly.isAllocatedOn or self.providedAssembly.isAllocatedOn.links->collect(containers)->includes(self.requiredAssembly.isAllocatedOn)
