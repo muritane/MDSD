@@ -67,9 +67,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/provides"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/allocation"/>
     </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Allocation">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/specifiedBy"/>
-    </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//AllocationContext">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AllocationContext/specifiesAllocation"/>
     </genClasses>

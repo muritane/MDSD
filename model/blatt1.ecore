@@ -80,10 +80,6 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" lowerBound="1"
         upperBound="-1" eType="#//Interface" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="allocation" lowerBound="1"
-        eType="#//Allocation" containment="true"/>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Allocation">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiedBy" upperBound="-1"
         eType="#//AllocationContext" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
