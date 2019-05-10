@@ -14,16 +14,20 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="has" lowerBound="1" upperBound="-1"
         eType="#//Signature" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//Component"
-        eOpposite="#//Component/provides"/>
+        eOpposite="#//Component/providesInterface"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
         eType="#//Interface" containment="true" eOpposite="#//Interface/providedBy"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiers" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiersService" lowerBound="1"
         eType="#//Service" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="has" lowerBound="1" eType="#//BehaviorDescription"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="reuiresInterface" upperBound="-1"
+        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1"
+        upperBound="-1" eType="#//Service"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Signature">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
@@ -53,8 +57,6 @@
       <details key="IdenticalSignatureReturnTypes" value="&#xA;          self.corresponds -> forAll(s | self.corresponds -> forAll(t | s.returnType = t.returnType))"/>
       <details key="IdenticalSignatureParameterTypes" value="&#xA;          self.corresponds -> forAll(s | self.corresponds -> forAll(t | s.parameterType -> includesAll(t.parameterType) and t.parameterType -> includesAll(s.parameterType)))"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="provides" lowerBound="1"
-        eType="#//Component" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="corresponds" lowerBound="1"
         upperBound="-1" eType="#//Signature" containment="true"/>
   </eClassifiers>
@@ -82,7 +84,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//AssemblyContext"
         eOpposite="#//AssemblyContext/provides"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CompComp" eSuperTypes="#//Component">
+  <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Component">
     <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulate" lowerBound="1"
         eType="#//AssemblyContext" containment="true"/>
   </eClassifiers>
