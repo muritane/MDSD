@@ -52,6 +52,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/requires"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/provides"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/component"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/isAllocatedOn"/>
     </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//Role"/>
     <genClasses ecoreClass="blatt1.ecore#//CompComp">
@@ -62,14 +63,22 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/provides"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/allocation"/>
     </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Allocation"/>
-    <genClasses ecoreClass="blatt1.ecore#//AllocationContext"/>
+    <genClasses ecoreClass="blatt1.ecore#//Allocation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/specifiedBy"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//AllocationContext">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AllocationContext/specifiesAllocation"/>
+    </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//Container">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Container/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Container/links"/>
     </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//Environment">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/link"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/container"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/link"/>
     </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Link"/>
+    <genClasses ecoreClass="blatt1.ecore#//Link">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Link/name"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>
