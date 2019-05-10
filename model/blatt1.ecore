@@ -108,6 +108,8 @@
         upperBound="-1" eType="#//Interface" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="allocation" lowerBound="1"
         eType="#//AllocationContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"
+        eType="#//Environment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
     <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesAllocation" upperBound="-1"
