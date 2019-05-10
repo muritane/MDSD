@@ -1,6 +1,6 @@
-context <Component>
-inv ProvidedServiceSignature:
-self.providedInterfaces -> forAll(i | self.providedServices-> exists(s |s.corresponds = i.signature))
+    context <Component>
+    invariant ProvidedServiceSignature: 
+			self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)));
 
 context <Service>
 inv IdenticlalSignatures:
