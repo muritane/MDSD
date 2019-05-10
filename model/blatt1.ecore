@@ -10,7 +10,7 @@
     <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Interface">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1"
         upperBound="-1" eType="#//Signature" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//Component"
@@ -24,7 +24,7 @@
       <details key="ProvidedServiceSignature" value="&#xA;&#x9;&#x9;&#x9;self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)))"/>
       <details key="ServiceRequiredIsRequired" value="&#xA;&#x9;&#x9;&#x9;self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds))"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
         eType="#//Interface" containment="true" eOpposite="#//Interface/providedBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1"
@@ -37,7 +37,7 @@
         upperBound="-1" eType="#//Service"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Signature">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1"
         eType="#//Type"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1"
@@ -75,7 +75,7 @@
         eType="#//Interface" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requires" upperBound="-1"
         eType="#//Role" containment="true" eOpposite="#//Role/requiredBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
@@ -114,7 +114,7 @@
         eType="#//Container" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Container">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="links" lowerBound="2" upperBound="-1"
         eType="#//Link"/>
   </eClassifiers>
@@ -125,7 +125,7 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
     <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" eType="#//Role"/>
@@ -135,4 +135,5 @@
   <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
   <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
   <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Name"/>
 </ecore:EPackage>
