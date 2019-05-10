@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="blatt1" nsURI="http://www.example.org/blatt1" nsPrefix="blatt1">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Interface">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="has" lowerBound="1" upperBound="-1"
         eType="#//Signature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//Component"
+        eOpposite="#//Component/provides"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
-        eType="#//Interface" containment="true"/>
+        eType="#//Interface" containment="true" eOpposite="#//Interface/providedBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requiers" lowerBound="1"
         eType="#//Service" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="has" lowerBound="1" eType="#//BehaviorDescription"
@@ -42,24 +47,29 @@
         upperBound="-1" eType="#//Signature" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="internalActions"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="loops"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="branches"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loops"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="branches"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="describes" upperBound="-1"
         eType="#//Interface" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="requires" upperBound="-1"
-        eType="#//Role" containment="true"/>
+        eType="#//Role" containment="true" eOpposite="#//Role/requiredBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
-        eType="#//Role" containment="true"/>
+        eType="#//Role" containment="true" eOpposite="#//Role/providedBy"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
         eType="#//Component" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="isAllocatedOn" upperBound="-1"
         eType="#//Container" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Role">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredBy" eType="#//AssemblyContext"
+        eOpposite="#//AssemblyContext/requires"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//AssemblyContext"
+        eOpposite="#//AssemblyContext/provides"/>
+  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CompComp" eSuperTypes="#//Component">
     <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulate" lowerBound="1"
         eType="#//AssemblyContext" containment="true"/>
@@ -93,5 +103,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2003/XMLType#//Name"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"
+        eType="#//Interface"/>
   </eClassifiers>
 </ecore:EPackage>
