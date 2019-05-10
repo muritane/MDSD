@@ -2,16 +2,15 @@
     invariant ProvidedServiceSignature: 
 			self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)));
 
-context <Service>
-inv IdenticlalSignatures:
-//not two constraints, but one "isIdentical" function, as we concider this to be one constraint that depends on the definition of "identical"
-let isIdentical(s, t) : s.params = t.params and s.returnType = t.returnType
-self.corresponds -> forall(s | self.corresponds -> forAll(t | isIdentical(s, t)))
+    context <Service>
+    inv IdenticlalSignatures:
+    //actually are two constraints now, because eclipse sucks//not two constraints, but one "isIdentical" function, as we concider this to be one constraint that depends on the definition of "identical"
+    let isIdentical(s, t) : s.params = t.params and s.returnType = t.returnType
+    self.corresponds -> forall(s | self.corresponds -> forAll(t | isIdentical(s, t)))
 
-context <Service>
-inv RequiredIsRequired:
-//ist es richtig, dass services componenten requirern? wenn nicht -> das hier in context <Component> mit self.services->forall ... formulieren
-self.requiredComponent.requiredInterfaces->collect(signature)->asSet()->includes(self.corresponds)
+    context <Component>
+    invariant ServiceRequiredIsRequired:
+			    self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds));
 
 context <System>
 inv AllocationContextSpecifiesAssemblyAllocation:

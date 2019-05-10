@@ -16,17 +16,18 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="ProvidedServiceSignature"/>
+      <details key="constraints" value="ProvidedServiceSignature ServiceRequiredIsRequired"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="ProvidedServiceSignature" value="&#xA;&#x9;&#x9;&#x9;self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)))"/>
+      <details key="ServiceRequiredIsRequired" value="&#xA;&#x9;&#x9;&#x9;self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds))"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="name"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1" eType="#//Interface" containment="true"
         eOpposite="#//Interface/providedBy"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiersService" lowerBound="1" eType="#//Service" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1" eType="#//BehaviorDescription" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="reuiresInterface" upperBound="-1" eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1" eType="#//Service" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription" lowerBound="1" eType="#//BehaviorDescription" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresInterface" upperBound="-1" eType="#//Interface"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1" upperBound="-1" eType="#//Service"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Signature">
