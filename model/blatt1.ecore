@@ -75,6 +75,12 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" eType="#//AssemblyContext" eOpposite="#//AssemblyContext/provides"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Component">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="NoAllocation"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="NoAllocation" value="&#xA;&#x9;&#x9;&#x9;self.encapsulate->collect(isAllocatedOn)->size() = 0"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulate" lowerBound="1" eType="#//AssemblyContext" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="System">
