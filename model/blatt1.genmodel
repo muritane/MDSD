@@ -9,34 +9,15 @@
   <foreignModel>blatt1.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Blatt1" disposableProviderFactory="true" ecorePackage="blatt1.ecore#/">
-    <genClasses ecoreClass="blatt1.ecore#//ComponentBasedSystem">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//ComponentBasedSystem/using"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//ViewPoint">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//ViewPoint/consists"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//ViewType"/>
-    <genClasses ecoreClass="blatt1.ecore#//SystemIndependent">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//SystemIndependent/showsReusedCompIfaces"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Repository">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/contains"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Assembly">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/showsCompInstanciation"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Assembly.1"/>
-    <genClasses ecoreClass="blatt1.ecore#//Deployment">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Deployment/showsContainersAndLinks"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Deployment/showsAllocCompInWhichContainer"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Environment"/>
-    <genClasses ecoreClass="blatt1.ecore#//Allocation"/>
     <genClasses ecoreClass="blatt1.ecore#//Interface">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Interface/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Interface/has"/>
     </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//Component">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Component/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/provides"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/requiers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/has"/>
     </genClasses>
     <genClasses ecoreClass="blatt1.ecore#//Signature">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Signature/name"/>
@@ -56,5 +37,39 @@
     <genClasses ecoreClass="blatt1.ecore#//String"/>
     <genClasses ecoreClass="blatt1.ecore#//Void"/>
     <genClasses ecoreClass="blatt1.ecore#//ComplexType"/>
+    <genClasses ecoreClass="blatt1.ecore#//Service">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Service/provides"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Service/corresponds"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//BehaviorDescription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//BehaviorDescription/internalActions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//BehaviorDescription/loops"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//BehaviorDescription/branches"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//BehaviorDescription/describes"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//AssemblyContext">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//AssemblyContext/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/requires"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/provides"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/component"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//Role"/>
+    <genClasses ecoreClass="blatt1.ecore#//CompComp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//CompComp/encapsulate"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//System">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/encapsulate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/provides"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/allocation"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//Allocation"/>
+    <genClasses ecoreClass="blatt1.ecore#//AllocationContext"/>
+    <genClasses ecoreClass="blatt1.ecore#//Container">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Container/name"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//Environment">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/link"/>
+    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//Link"/>
   </genPackages>
 </genmodel:GenModel>
