@@ -12,25 +12,25 @@
     invariant ServiceRequiredIsRequired:
 			    self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds));
 
-context <System>
-inv AllocationContextSpecifiesAssemblyAllocation:
-self.allocationContext.specifiedAssemblies = self.encapsulatedAssemblies
+	context <System>
+	inv AllocationContextSpecifiesAssemblyAllocation:
+	self.allocationContext.specifiedAssemblies = self.encapsulatedAssemblies
 
-context <System>
-inv AllocationOnCorrespondingEnvironment:
-self.allocationContext.specifiedContainers -> forAll(c | self.environment->includes(c))
+	context <System>
+	inv AllocationOnCorrespondingEnvironment:
+	self.allocationContext.specifiedContainers -> forAll(c | self.environment->includes(c))
 
-context <System>
-inv AllocationContextAssemblyContainer:
-self.allocationContext.specifiedContainers -> forall(c | self.encapsulatedAssemblies.collect(isAllocatedOn) -> includes(c))
+	context <System>
+	inv AllocationContextAssemblyContainer:
+	self.allocationContext.specifiedContainers -> forall(c | self.encapsulatedAssemblies.collect(isAllocatedOn) -> includes(c))
 
-context <System>
-inv AssemblyContainerAllocationContext:
-self.encapsulatedAssemblies.collect(isAllocatedOn) -> forall(c | self.allocationContext.specifiedContainers  -> includes(c))
+	context <System>
+	inv AssemblyContainerAllocationContext:
+	self.encapsulatedAssemblies.collect(isAllocatedOn) -> forall(c | self.allocationContext.specifiedContainers  -> includes(c))
 
-context<CompositeComponent>
-inv NoAllocation:
-self.encapsulatedAssemblies.collect(isAllocatedOn).size = 0
+	context<CompositeComponent>
+	inv NoAllocation:
+	self.encapsulatedAssemblies.collect(isAllocatedOn).size = 0
 
 context<AssemblyConnector>
 inv RequiredRolesFromAssemblies:
