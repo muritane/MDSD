@@ -32,14 +32,14 @@
 	inv NoAllocation:
 	self.encapsulatedAssemblies.collect(isAllocatedOn).size = 0
 
-context<AssemblyConnector>
-inv RequiredRolesFromAssemblies:
-self.requiredRole = self.requiredAssembly.reuiredRole
+    context<AssemblyConnector>
+    inv RequiredRolesFromAssemblies:
+    self.requiredRole = self.requiredAssembly.reuiredRole
 
-context<AssemblyConnector>
-inv ProvidedRolesFromAssemblies:
-self.providedRole = self.providedAssembly.providedRole
+    context<AssemblyConnector>s
+    inv ProvidedRolesFromAssemblies:
+    self.providedRole = self.providedAssembly.providedRole
 
-context<AssemblyConnector>
-inv RolesOnSameOrLinkedContainer:
-self.providedAssembly.isAllocatedOn = self.requiredAssembly.isAllocatedOn or self.providedAssembly.isAllocatedOn.links->collect(containers)->includes(self.requiredAssembly.isAllocatedOn)
+    context<AssemblyConnector>
+    inv RolesOnSameOrLinkedContainer:
+    self.providedAssembly.isAllocatedOn = self.requiredAssembly.isAllocatedOn or self.providedAssembly.isAllocatedOn.links->collect(containers)->includes(self.requiredAssembly.isAllocatedOn)
