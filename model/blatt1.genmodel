@@ -5,85 +5,127 @@
     editorDirectory="/Blatt1.editor/src-gen" modelPluginID="Blatt1" modelName="Blatt1"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
-    operationReflection="true" importOrganizing="true">
+    usedGenPackages="#//blatt1/Repository" operationReflection="true" importOrganizing="true">
   <foreignModel>blatt1.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Blatt1" disposableProviderFactory="true" ecorePackage="blatt1.ecore#/">
-    <genClasses ecoreClass="blatt1.ecore#//Interface">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Interface/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Interface/has"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Interface/providedBy"/>
+    <genClasses ecoreClass="blatt1.ecore#//CompositeComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//CompositeComponent/encapsulatesAssemblyContext"/>
     </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Component">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Component/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/provides"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/requiers"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Component/has"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Signature">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Signature/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Signature/returnType"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Signature/parameterType"/>
-    </genClasses>
-    <genClasses image="false" ecoreClass="blatt1.ecore#//Type"/>
-    <genClasses ecoreClass="blatt1.ecore#//Boolean"/>
-    <genClasses ecoreClass="blatt1.ecore#//Char"/>
-    <genClasses ecoreClass="blatt1.ecore#//Date"/>
-    <genClasses ecoreClass="blatt1.ecore#//Double"/>
-    <genClasses ecoreClass="blatt1.ecore#//Float"/>
-    <genClasses ecoreClass="blatt1.ecore#//List"/>
-    <genClasses ecoreClass="blatt1.ecore#//Int"/>
-    <genClasses ecoreClass="blatt1.ecore#//Long"/>
-    <genClasses ecoreClass="blatt1.ecore#//Map"/>
-    <genClasses ecoreClass="blatt1.ecore#//String"/>
-    <genClasses ecoreClass="blatt1.ecore#//Void"/>
-    <genClasses ecoreClass="blatt1.ecore#//ComplexType"/>
-    <genClasses ecoreClass="blatt1.ecore#//Service">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Service/provides"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Service/corresponds"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//BehaviorDescription">
-      <genFeatures createChild="false" ecoreFeature="ecore:EReference blatt1.ecore#//BehaviorDescription/internalActions"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EReference blatt1.ecore#//BehaviorDescription/loops"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EReference blatt1.ecore#//BehaviorDescription/branches"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//BehaviorDescription/describes"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//AssemblyContext">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//AssemblyContext/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/requires"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/provides"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/component"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AssemblyContext/isAllocatedOn"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Role">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Role/requiredBy"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Role/providedBy"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//CompComp">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//CompComp/encapsulate"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//System">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/encapsulate"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/provides"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//System/allocation"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//AllocationContext">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//AllocationContext/specifiesAllocation"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Container">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Container/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//Container/links"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Environment">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/container"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/link"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//Link">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Link/name"/>
-    </genClasses>
-    <genClasses ecoreClass="blatt1.ecore#//DelegationConnector">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//DelegationConnector/role"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference blatt1.ecore#//DelegationConnector/interface"/>
-    </genClasses>
+    <genClasses ecoreClass="blatt1.ecore#//Name"/>
+    <nestedGenPackages prefix="NewPackage1" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Repository">
+      <genClasses ecoreClass="blatt1.ecore#//Repository/List"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Map"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/ComplexType"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Date"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Double"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/String"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Int"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Type"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Char"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Signature">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Signature/name"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Signature/returnType"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Signature/parameterType"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Long"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Float"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Boolean"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Void"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Branch"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Interface">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Interface/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Interface/hasSignature"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/InternalAction"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Service">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Service/corresponds"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Loop"/>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/BehaviorDescription">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/BehaviorDescription/internalActions"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/BehaviorDescription/loops"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/BehaviorDescription/branches"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/BehaviorDescription/describesInterface"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Repository/Component">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providesInterface"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiresService"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/behaviourDescription"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiresInterface"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providesService"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage2" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Assembly">
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/AssemblyContext">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/name"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/requiresRole"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/providesRole"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/component"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/isAllocatedOnContainer"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/AssemblyConnector">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyConnector/providesAssemblyContext"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyConnector/requiresAssemblyContext"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyConnector/requiresRole"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyConnector/providesRole"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/System">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/System/encapsulatesAssemblyContext"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/System/providesInterface"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/System/allocationContext"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/System/environment"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/Role"/>
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/DelegationConnector">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/DelegationConnector/role"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/DelegationConnector/interface"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage3" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Allocation">
+      <genClasses ecoreClass="blatt1.ecore#//Allocation/AllocationContext">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/AllocationContext/specifiesAllocation"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/AllocationContext/alloctesAssemblies"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="NewPackage4" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Environment">
+      <genClasses ecoreClass="blatt1.ecore#//Environment/Link">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Link/name"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Link/containers"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Environment/Container">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Container/name"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Container/links"/>
+      </genClasses>
+      <genClasses ecoreClass="blatt1.ecore#//Environment/Environment">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Environment/container"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Environment/Environment/link"/>
+      </genClasses>
+    </nestedGenPackages>
   </genPackages>
 </genmodel:GenModel>
