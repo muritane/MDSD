@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="blatt1" nsURI="http://www.example.org/blatt1" nsPrefix="blatt1">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="blatt1" nsURI="http://www.example.org/blatt1" nsPrefix="blatt1">
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
     <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
   </eAnnotations>
@@ -11,8 +11,7 @@
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Interface">
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1"
-        upperBound="-1" eType="#//Signature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1" upperBound="-1" eType="#//Signature" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Component">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -23,23 +22,16 @@
       <details key="ServiceRequiredIsRequired" value="&#xA;&#x9;&#x9;&#x9;self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds))"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
-        eType="#//Interface" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1"
-        eType="#//Service" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription" lowerBound="1"
-        eType="#//BehaviorDescription" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresInterface" upperBound="-1"
-        eType="#//Interface"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1"
-        upperBound="-1" eType="#//Service"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1" eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1" eType="#//Service" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription" lowerBound="1" eType="#//BehaviorDescription" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresInterface" upperBound="-1" eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1" upperBound="-1" eType="#//Service"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Signature">
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1"
-        eType="#//Type"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1"
-        eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1" eType="#//Type"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Type"/>
   <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Type"/>
@@ -62,26 +54,20 @@
       <details key="IdenticalSignatureReturnTypes" value="&#xA;          self.corresponds -> forAll(s | self.corresponds -> forAll(t | s.returnType = t.returnType))"/>
       <details key="IdenticalSignatureParameterTypes" value="&#xA;          self.corresponds -> forAll(s | self.corresponds -> forAll(t | s.parameterType -> includesAll(t.parameterType) and t.parameterType -> includesAll(s.parameterType)))"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="corresponds" lowerBound="1"
-        upperBound="-1" eType="#//Signature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="corresponds" lowerBound="1" upperBound="-1" eType="#//Signature" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
     <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//InternalAction"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Loop"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="branches" eType="#//Branch"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="describesInterface" upperBound="-1"
-        eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="describesInterface" upperBound="-1" eType="#//Interface" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" upperBound="-1"
-        eType="#//Role" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesRole" upperBound="-1"
-        eType="#//Role" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
-        eType="#//Component" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="isAllocatedOn" lowerBound="1"
-        eType="#//AllocationContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" upperBound="-1" eType="#//Role" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesRole" upperBound="-1" eType="#//Role" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1" eType="#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isAllocatedOnContainer" lowerBound="1" eType="#//AllocationContext"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role"/>
   <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Component">
@@ -89,10 +75,9 @@
       <details key="constraints" value="NoAllocation"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="NoAllocation" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatesAssemblyContext->collect(isAllocatedOn)->size() = 0"/>
+      <details key="NoAllocation" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatesAssemblyContext->collect(isAllocatedOnContainer)->size() = 0"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatesAssemblyContext"
-        lowerBound="1" eType="#//AssemblyContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatesAssemblyContext" lowerBound="1" eType="#//AssemblyContext" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="System">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -101,44 +86,33 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="AllocationContextSpecifiesAssemblyAllocation" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.alloctesAssemblies = self.encapsulatesAssemblyContext"/>
       <details key="AllocationOnCorrespondingEnvironment" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.specifiesAllocation -> forAll(c | self.environment->includes(c))"/>
-      <details key="AllocationContextAssemblyContainer" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.specifiesAllocation -> forAll(c | self.encapsulatesAssemblyContext->collect(isAllocatedOn)->includes(c))"/>
-      <details key="AssemblyContainerAllocationContext" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatesAssemblyContext->collect(isAllocatedOn)->forAll(c | self.allocationContext.specifiesAllocation -> includes(c))"/>
+      <details key="AllocationContextAssemblyContainer" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.specifiesAllocation -> forAll(c | self.encapsulatesAssemblyContext->collect(isAllocatedOnContainer)->includes(c))"/>
+      <details key="AssemblyContainerAllocationContext" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatesAssemblyContext->collect(isAllocatedOnContainer)->forAll(c | self.allocationContext.specifiesAllocation -> includes(c))"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatesAssemblyContext"
-        lowerBound="1" eType="#//AssemblyContext" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" lowerBound="1"
-        upperBound="-1" eType="#//Interface" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
-        eType="#//AllocationContext" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"
-        eType="#//Environment"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatesAssemblyContext" lowerBound="1" eType="#//AssemblyContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" lowerBound="1" upperBound="-1" eType="#//Interface" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1" eType="#//AllocationContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1" eType="#//Environment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesAllocation" upperBound="-1"
-        eType="#//Container" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="alloctesAssemblies" lowerBound="1"
-        upperBound="-1" eType="#//AssemblyContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesAllocation" upperBound="-1" eType="#//Container" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="alloctesAssemblies" lowerBound="1" upperBound="-1" eType="#//AssemblyContext"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Container">
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="links" lowerBound="2" upperBound="-1"
-        eType="#//Link"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="links" lowerBound="2" upperBound="-1" eType="#//Link"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Environment">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1"
-        upperBound="-1" eType="#//Container" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="link" upperBound="-1" eType="#//Link"
-        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1" upperBound="-1" eType="#//Container" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="link" upperBound="-1" eType="#//Link" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Link">
     <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="containers" lowerBound="2"
-        upperBound="-1" eType="#//Container"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containers" lowerBound="2" upperBound="-1" eType="#//Container"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
     <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" eType="#//Role"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"
-        eType="#//Interface"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1" eType="#//Interface"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
   <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
@@ -151,15 +125,11 @@
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="RequiredRolesFromAssemblies" value="&#xA;&#x9;&#x9;&#x9;self.requiresRole = self.requiresAssemblyContext.requiresRole"/>
       <details key="ProvidedRolesFromAssemblies" value="&#xA;&#x9;&#x9;&#x9;self.providesRole = self.providesAssemblyContext.providesRole"/>
-      <details key="RolesOnSameOrLinkedContainer" value="&#xA;&#x9;&#x9;&#x9;self.providesAssemblyContext.isAllocatedOn = self.requiresAssemblyContext.isAllocatedOn&#xA;&#x9;&#x9;&#x9;or self.providesAssemblyContext.isAllocatedOn.specifiesAllocation.links->collect(containers)->includes(self.requiresAssemblyContext.isAllocatedOn)"/>
+      <details key="RolesOnSameOrLinkedContainer" value="&#xA;&#x9;&#x9;&#x9;self.providesAssemblyContext.isAllocatedOnContainer = self.requiresAssemblyContext.isAllocatedOnContainer&#xA;&#x9;&#x9;&#x9;or self.providesAssemblyContext.isAllocatedOnContainer.specifiesAllocation.links->collect(containers)->includes(self.requiresAssemblyContext.isAllocatedOnContainer)"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesAssemblyContext"
-        lowerBound="1" eType="#//AssemblyContext"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresAssemblyContext"
-        lowerBound="1" eType="#//AssemblyContext"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" lowerBound="1"
-        eType="#//Role"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="providesRole" lowerBound="1"
-        eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesAssemblyContext" lowerBound="1" eType="#//AssemblyContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresAssemblyContext" lowerBound="1" eType="#//AssemblyContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" lowerBound="1" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providesRole" lowerBound="1" eType="#//Role"/>
   </eClassifiers>
 </ecore:EPackage>
