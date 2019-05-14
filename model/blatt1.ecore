@@ -9,13 +9,12 @@
     <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
     <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
   </eAnnotations>
-  <eClassifiers xsi:type="ecore:EClass" name="Name"/>
   <eSubpackages name="Repository" nsURI="http://www.example.org/blatt1/repository"
       nsPrefix="repository">
     <eClassifiers xsi:type="ecore:EClass" name="Interface">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1"
           upperBound="-1" eType="#//Repository/Types/Signature" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Service">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -36,7 +35,6 @@
         <details key="ProvidedServiceSignature" value="&#xA;&#x9;&#x9;&#x9;self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)))"/>
         <details key="ServiceRequiredIsRequired" value="&#xA;&#x9;&#x9;&#x9;self.requiresService->forAll(s | self.requiresInterface->collect(hasSignature)->asSet()->includes(s.corresponds))"/>
       </eAnnotations>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providesInterface" upperBound="-1"
           eType="#//Repository/Interface" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1"
@@ -47,6 +45,7 @@
           eType="#//Repository/Interface"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1"
           upperBound="-1" eType="#//Repository/Service"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Repository/Component">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -69,11 +68,11 @@
       <eClassifiers xsi:type="ecore:EClass" name="Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Char" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Signature">
-        <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1"
             eType="#//Repository/Types/Type"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1"
             eType="#//Repository/Types/Type"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="Long" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Float" eSuperTypes="#//Repository/Types/Type"/>
@@ -95,7 +94,6 @@
   </eSubpackages>
   <eSubpackages name="Assembly" nsURI="http://www.example.org/blatt1/assembly" nsPrefix="assembly">
     <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" upperBound="-1"
           eType="#//Assembly/Role" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providesRole" upperBound="-1"
@@ -104,6 +102,7 @@
           eType="#//Repository/Component" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="isAllocatedOnContainer"
           lowerBound="1" eType="#//Allocation/AllocationContext"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="AssemblyConnector">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -162,14 +161,14 @@
   <eSubpackages name="Environment" nsURI="http://www.example.org/blatt1/environment"
       nsPrefix="environment">
     <eClassifiers xsi:type="ecore:EClass" name="Link">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="containers" lowerBound="2"
           upperBound="-1" eType="#//Environment/Container"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Container">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="links" lowerBound="2"
           upperBound="-1" eType="#//Environment/Link"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Environment">
       <eStructuralFeatures xsi:type="ecore:EReference" name="container" lowerBound="1"
