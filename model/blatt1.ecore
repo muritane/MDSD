@@ -11,33 +11,11 @@
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Name"/>
   <eSubpackages name="Repository">
-    <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Map" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="ComplexType" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Date" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Double" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="String" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Int" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Char" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Signature">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1"
-          eType="#//Repository/Type"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1"
-          eType="#//Repository/Type"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Long" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Float" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Void" eSuperTypes="#//Repository/Type"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
     <eClassifiers xsi:type="ecore:EClass" name="Interface">
       <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1"
-          upperBound="-1" eType="#//Repository/Signature" containment="true"/>
+          upperBound="-1" eType="#//Repository/Types/Signature" containment="true"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
     <eClassifiers xsi:type="ecore:EClass" name="Service">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
         <details key="constraints" value="IdenticalSignatureReturnTypes IdenticalSignatureParameterTypes"/>
@@ -47,15 +25,7 @@
         <details key="IdenticalSignatureParameterTypes" value="&#xA;          self.corresponds -> forAll(s | self.corresponds -> forAll(t | s.parameterType -> includesAll(t.parameterType) and t.parameterType -> includesAll(s.parameterType)))"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="corresponds" lowerBound="1"
-          upperBound="-1" eType="#//Repository/Signature" containment="true"/>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
-    <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//Repository/InternalAction"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Repository/Loop"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="branches" eType="#//Repository/Branch"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="describesInterface" upperBound="-1"
-          eType="#//Repository/Interface" containment="true"/>
+          upperBound="-1" eType="#//Repository/Types/Signature" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Component">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -71,7 +41,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiresService" lowerBound="1"
           eType="#//Repository/Service" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription"
-          lowerBound="1" eType="#//Repository/BehaviorDescription" containment="true"/>
+          lowerBound="1" eType="#//Repository/Behaviour/BehaviorDescription" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiresInterface" upperBound="-1"
           eType="#//Repository/Interface"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providesService" lowerBound="1"
@@ -87,6 +57,40 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatesAssemblyContext"
           lowerBound="1" eType="#//Assembly/AssemblyContext" containment="true"/>
     </eClassifiers>
+    <eSubpackages name="Types" nsURI="Types" nsPrefix="Types">
+      <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Map" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="ComplexType" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Date" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Double" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="String" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Int" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Char" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Signature">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="returnType" lowerBound="1"
+            eType="#//Repository/Types/Type"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="parameterType" upperBound="-1"
+            eType="#//Repository/Types/Type"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" name="Long" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Float" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Repository/Types/Type"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Void" eSuperTypes="#//Repository/Types/Type"/>
+    </eSubpackages>
+    <eSubpackages name="Behaviour" nsURI="Behaviour" nsPrefix="Behaviour">
+      <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
+      <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
+      <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
+        <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//Repository/Behaviour/InternalAction"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Repository/Behaviour/Loop"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="branches" eType="#//Repository/Behaviour/Branch"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="describesServices"
+            upperBound="-1" eType="#//Repository/Service" containment="true"/>
+      </eClassifiers>
+    </eSubpackages>
   </eSubpackages>
   <eSubpackages name="Assembly">
     <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
