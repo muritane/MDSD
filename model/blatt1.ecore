@@ -10,7 +10,8 @@
     <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Name"/>
-  <eSubpackages name="Repository">
+  <eSubpackages name="Repository" nsURI="http://www.example.org/blatt1/repository"
+      nsPrefix="repository">
     <eClassifiers xsi:type="ecore:EClass" name="Interface">
       <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="hasSignature" lowerBound="1"
@@ -92,7 +93,7 @@
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
-  <eSubpackages name="Assembly">
+  <eSubpackages name="Assembly" nsURI="http://www.example.org/blatt1/assembly" nsPrefix="assembly">
     <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
       <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiresRole" upperBound="-1"
@@ -149,7 +150,8 @@
           eType="#//Repository/Interface"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="Allocation">
+  <eSubpackages name="Allocation" nsURI="http://www.example.org/blatt1/allocation"
+      nsPrefix="allocation">
     <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
       <eStructuralFeatures xsi:type="ecore:EReference" name="specifiesAllocation"
           upperBound="-1" eType="#//Environment/Container" containment="true"/>
@@ -157,7 +159,8 @@
           upperBound="-1" eType="#//Assembly/AssemblyContext"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="Environment">
+  <eSubpackages name="Environment" nsURI="http://www.example.org/blatt1/environment"
+      nsPrefix="environment">
     <eClassifiers xsi:type="ecore:EClass" name="Link">
       <eStructuralFeatures xsi:type="ecore:EReference" name="name" eType="#//Name"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="containers" lowerBound="2"
