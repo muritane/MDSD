@@ -80,6 +80,9 @@
       <eClassifiers xsi:type="ecore:EClass" name="Void" eSuperTypes="#//Repository/Types/Type"/>
     </eSubpackages>
     <eSubpackages name="Behaviour" nsURI="Behaviour" nsPrefix="Behaviour">
+      <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
+      <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
+      <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
       <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
         <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//Repository/Behaviour/InternalAction"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Repository/Behaviour/Loop"/>
@@ -87,9 +90,6 @@
         <eStructuralFeatures xsi:type="ecore:EReference" name="describesServices"
             upperBound="-1" eType="#//Repository/Service" containment="true"/>
       </eClassifiers>
-      <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
-      <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
-      <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
     </eSubpackages>
   </eSubpackages>
   <eSubpackages name="Assembly" nsURI="http://www.example.org/blatt1/assembly" nsPrefix="assembly">
