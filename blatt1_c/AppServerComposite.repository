@@ -1,53 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repository:CompositeComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" name="MediaStore">
-  <providedInterface name="AudioDB">
-    <signature name="queryDB">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </signature>
-    <signature name="addFile">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </signature>
-  </providedInterface>
-  <requiredService>
-    <correspondingSignature name="download">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-    <correspondingSignature name="upload">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-  </requiredService>
+  <requiredInterface href="AudioDB.repository#/"/>
   <encapsulatedAssemblyContext name="ApplicationServerCompositeAssemblyContext">
-    <component name="Digital Watermarking">
-      <requiredService>
-        <correspondingSignature name="watermark">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-      </requiredService>
-    </component>
-    <component requiredInterface="//@providedInterface.0 //@encapsulatedAssemblyContext/@component.1/@providedInterface.0" name="Media Manager">
-      <providedInterface name="Sound">
-        <signature name="watermark">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </signature>
-      </providedInterface>
-    </component>
-    <component requiredInterface="//@providedInterface.0" name="DBCache">
-      <requiredService>
-        <correspondingSignature name="queryDB">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-        <correspondingSignature name="addFile">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-      </requiredService>
-    </component>
+    <component name="Digital Watermarking"/>
+    <component name="Media Manager"/>
+    <component name="DBCache"/>
   </encapsulatedAssemblyContext>
 </repository:CompositeComponent>
