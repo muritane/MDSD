@@ -10,7 +10,7 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
+  <providedService href="MediaStoreService.repository#/"/>
   <requiredInterface href="AudioDB.repository#/"/>
   <requiredInterface href="Sound.repository#/"/>
-  <providedService href="MediaStoreService.repository#/"/>
 </repository:Component>
