@@ -26,6 +26,7 @@
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="correspondingSignature"
           lowerBound="1" upperBound="-1" eType="#//Repository/Types/Signature" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Component">
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -37,14 +38,14 @@
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterface" upperBound="-1"
           eType="#//Repository/Interface" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredService" lowerBound="1"
-          eType="#//Repository/Service" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription"
-          lowerBound="1" eType="#//Repository/Behaviour/BehaviorDescription" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredInterface" upperBound="-1"
-          eType="#//Repository/Interface"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedService" lowerBound="1"
           upperBound="-1" eType="#//Repository/Service"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredInterface" upperBound="-1"
+          eType="#//Repository/Interface"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredService" lowerBound="1"
+          upperBound="-1" eType="#//Repository/Service" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription"
+          lowerBound="1" eType="#//Repository/Behaviour/BehaviorDescription" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CompositeComponent" eSuperTypes="#//Repository/Component">
