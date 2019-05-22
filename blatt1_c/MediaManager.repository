@@ -10,23 +10,18 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
-  <providedService href="MediaStoreService.repository#/"/>
+  <providedService name="MediaStore">
+    <correspondingSignature name="upload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+    <correspondingSignature name="download">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+  </providedService>
   <requiredInterface href="AudioDB.repository#/"/>
   <requiredInterface href="Sound.repository#/"/>
-  <requiredService name="Sound">
-    <correspondingSignature name="watermark">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-  </requiredService>
-  <requiredService name="AudioDB">
-    <correspondingSignature name="queryDB">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-    <correspondingSignature name="addFile">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-  </requiredService>
+  <requiredService href="AudioDBService.repository#/"/>
+  <requiredService href="SoundService.repository#/"/>
 </repository:Component>

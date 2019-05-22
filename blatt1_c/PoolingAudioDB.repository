@@ -10,5 +10,14 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
-  <providedService href="AudioDBService.repository#/"/>
+  <providedService name="AudioDB">
+    <correspondingSignature name="queryDB">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+    <correspondingSignature name="addFile">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+  </providedService>
 </repository:Component>

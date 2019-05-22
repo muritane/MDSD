@@ -6,5 +6,10 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
-  <providedService href="SoundService.repository#/"/>
+  <providedService name="Sound">
+    <correspondingSignature name="watermark">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+  </providedService>
 </repository:Component>

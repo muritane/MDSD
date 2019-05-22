@@ -10,9 +10,7 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
-  <providedService href="AudioDBService.repository#/"/>
-  <requiredInterface href="AudioDB.repository#/"/>
-  <requiredService name="AudioDB">
+  <providedService name="AudioDB">
     <correspondingSignature name="queryDB">
       <returnType href="My.types#/"/>
       <parameterType href="My.types#/"/>
@@ -21,5 +19,7 @@
       <returnType href="My.types#/"/>
       <parameterType href="My.types#/"/>
     </correspondingSignature>
-  </requiredService>
+  </providedService>
+  <requiredInterface href="AudioDB.repository#/"/>
+  <requiredService href="AudioDBService.repository#/"/>
 </repository:Component>

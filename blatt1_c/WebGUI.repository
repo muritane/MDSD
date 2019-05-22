@@ -10,16 +10,16 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
-  <providedService href="HTTPService.repository#/"/>
+  <providedService name="HTTP">
+    <correspondingSignature name="HTTPDownload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+    <correspondingSignature name="HTTPUpload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+  </providedService>
   <requiredInterface href="MediaStore.repository#/"/>
-  <requiredService name="MediaStore">
-    <correspondingSignature name="upload">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-    <correspondingSignature name="download">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
-  </requiredService>
+  <requiredService href="MediaStoreService.repository#/"/>
 </repository:Component>
