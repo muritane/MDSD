@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="Assembly" nsURI="platform:/resource/Blatt1/model/assembly.ecore#//assembly"
+    nsPrefix="assembly">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredRole" upperBound="-1"
+        eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedRole" upperBound="-1"
+        eType="#//Role" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AssemblyConnector">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="RequiredRolesFromAssemblies ProvidedRolesFromAssemblies RolesOnSameOrLinkedContainer"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="RequiredRolesFromAssemblies" value="&#xA;&#x9;&#x9;&#x9;self.requiredRole = self.requiredAssemblyContext.requiredRole"/>
+      <details key="ProvidedRolesFromAssemblies" value="&#xA;&#x9;&#x9;&#x9;self.providedRole = self.providedAssemblyContext.providedRole"/>
+      <details key="RolesOnSameOrLinkedContainer" value="&#xA;&#x9;&#x9;&#x9;self.providedAssemblyContext.allocationContext = self.requiredAssemblyContext.allocationContext&#xA;&#x9;&#x9;&#x9;or self.providedAssemblyContext.allocationContext.targetContainer.links->collect(linkedContainers)->includes(self.requiredAssemblyContext.allocationContext)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedAssemblyContext"
+        lowerBound="1" eType="#//AssemblyContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredAssemblyContext"
+        lowerBound="1" eType="#//AssemblyContext"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requiredRole" lowerBound="1"
+        eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedRole" lowerBound="1"
+        eType="#//Role"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="System">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="AllocationContextSpecifiesAssemblyAllocation AllocationOnCorrespondingEnvironment AllocationContextAssemblyContainer AssemblyContainerAllocationContext"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="AllocationContextSpecifiesAssemblyAllocation" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.allocatedAssemblyContext = self.encapsulatedAssemblyContext"/>
+      <details key="AllocationOnCorrespondingEnvironment" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.targetContainer -> forAll(c | self.environment->includes(c))"/>
+      <details key="AllocationContextAssemblyContainer" value="&#xA;&#x9;&#x9;&#x9;self.allocationContext.targetContainer -> forAll(c | self.encapsulatedAssemblyContext->collect(allocationContext)->includes(c))"/>
+      <details key="AssemblyContainerAllocationContext" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatedAssemblyContext->collect(allocationContext)->forAll(c | self.allocationContext.targetContainer -> includes(c))"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
+        lowerBound="1" eType="#//AssemblyContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterfaces" lowerBound="1"
+        upperBound="-1" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Role"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" eType="#//Role"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"/>
+  </eClassifiers>
+</ecore:EPackage>
