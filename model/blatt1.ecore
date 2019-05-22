@@ -85,11 +85,14 @@
       <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
       <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
       <eClassifiers xsi:type="ecore:EClass" name="BehaviorDescription">
-        <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//Repository/Behaviour/InternalAction"/>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Repository/Behaviour/Loop"/>
-        <eStructuralFeatures xsi:type="ecore:EReference" name="branches" eType="#//Repository/Behaviour/Branch"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="internalActions" eType="#//Repository/Behaviour/InternalAction"
+            containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="loops" eType="#//Repository/Behaviour/Loop"
+            containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" name="branches" eType="#//Repository/Behaviour/Branch"
+            containment="true"/>
         <eStructuralFeatures xsi:type="ecore:EReference" name="calledServices" upperBound="-1"
-            eType="#//Repository/Service" containment="true"/>
+            eType="#//Repository/Service"/>
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
