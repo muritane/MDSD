@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="blatt1" nsURI="http://www.example.org/blatt1" nsPrefix="blatt1">
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="blatt1" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//blatt1"
+    nsPrefix="blatt1">
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
     <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
   </eAnnotations>
-  <eSubpackages name="Repository" nsURI="http://www.example.org/blatt1/repository"
+  <eSubpackages name="Repository" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//repository"
       nsPrefix="repository">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
@@ -58,7 +59,8 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
           lowerBound="1" eType="#//Assembly/AssemblyContext" containment="true"/>
     </eClassifiers>
-    <eSubpackages name="Types" nsURI="Types" nsPrefix="Types">
+    <eSubpackages name="Types" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//repository/types"
+        nsPrefix="Types">
       <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Map" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="ComplexType" eSuperTypes="#//Repository/Types/Type"/>
@@ -80,7 +82,8 @@
       <eClassifiers xsi:type="ecore:EClass" name="Boolean" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Void" eSuperTypes="#//Repository/Types/Type"/>
     </eSubpackages>
-    <eSubpackages name="Behaviour" nsURI="Behaviour" nsPrefix="Behaviour">
+    <eSubpackages name="Behaviour" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//repository/behaviour"
+        nsPrefix="Behaviour">
       <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
       <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
       <eClassifiers xsi:type="ecore:EClass" name="Loop"/>
@@ -96,7 +99,8 @@
       </eClassifiers>
     </eSubpackages>
   </eSubpackages>
-  <eSubpackages name="Assembly" nsURI="http://www.example.org/blatt1/assembly" nsPrefix="assembly">
+  <eSubpackages name="Assembly" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//assembly"
+      nsPrefix="assembly">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
       <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
       <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
@@ -158,7 +162,7 @@
           eType="#//Repository/Interface"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="Allocation" nsURI="http://www.example.org/blatt1/allocation"
+  <eSubpackages name="Allocation" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//allocation"
       nsPrefix="allocation">
     <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
       <eStructuralFeatures xsi:type="ecore:EReference" name="targetContainer" upperBound="-1"
@@ -167,7 +171,7 @@
           lowerBound="1" upperBound="-1" eType="#//Assembly/AssemblyContext"/>
     </eClassifiers>
   </eSubpackages>
-  <eSubpackages name="Environment" nsURI="http://www.example.org/blatt1/environment"
+  <eSubpackages name="Environment" nsURI="platform:/resource/Blatt1/model/blatt1.ecore#//environment"
       nsPrefix="environment">
     <eClassifiers xsi:type="ecore:EClass" name="Link">
       <eStructuralFeatures xsi:type="ecore:EReference" name="linkedContainers" lowerBound="2"
