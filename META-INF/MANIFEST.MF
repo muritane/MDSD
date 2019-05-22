@@ -1,8 +1,8 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
-Bundle-SymbolicName: MDSD;singleton:=true
-Automatic-Module-Name: MDSD
+Bundle-SymbolicName: Blatt1;singleton:=true
+Automatic-Module-Name: Blatt1
 Bundle-Version: 0.1.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
