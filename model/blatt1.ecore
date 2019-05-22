@@ -104,7 +104,7 @@
     </eAnnotations>
     <eClassifiers xsi:type="ecore:EClass" name="AssemblyContext">
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiredRole" upperBound="-1"
-          eType="#//Assembly/Role" containment="true"/>
+          eType="#//Assembly/Role"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedRole" upperBound="-1"
           eType="#//Assembly/Role" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
