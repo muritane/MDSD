@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:CompositeComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" name="MediaStore">
+  <requiredInterface href="AudioDB.repository#/"/>
+  <encapsulatedAssemblyContext name="ApplicationServerCompositeAssemblyContext">
+    <component name="Digital Watermarking"/>
+    <component name="Media Manager"/>
+    <component name="DBCache"/>
+  </encapsulatedAssemblyContext>
+</repository:CompositeComponent>

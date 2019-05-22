@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:CompositeComponent xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" name="Media Store">
+  <providedService href="MediaStoreService.repository#/"/>
+  <requiredInterface href="AudioDB.repository#/"/>
+</repository:CompositeComponent>
