@@ -8,9 +8,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
-Export-Package: blatt1.Allocation,
- blatt1.Allocation.impl,
- blatt1.Allocation.util,
+Export-Package: allocation.Allocation,
+ allocation.Allocation.impl,
+ allocation.Allocation.util,
  blatt1.Assembly,
  blatt1.Assembly.impl,
  blatt1.Assembly.util,

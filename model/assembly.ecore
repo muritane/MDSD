@@ -16,8 +16,9 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedRole" upperBound="-1"
         eType="#//Role" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="component" upperBound="-1"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"/>
+        eType="ecore:EClass repository.ecore#//Component" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
+        eType="ecore:EClass allocation.ecore#//AllocationContext"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AssemblyConnector">
@@ -51,14 +52,16 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
         lowerBound="1" eType="#//AssemblyContext" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterfaces" lowerBound="1"
-        upperBound="-1" containment="true"/>
+        upperBound="-1" eType="ecore:EClass repository.ecore#//Interface" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"/>
+        eType="ecore:EClass allocation.ecore#//AllocationContext" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"
+        eType="ecore:EClass environment.ecore#//Environment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role"/>
   <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
     <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1" eType="#//Role"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="interface" lowerBound="1"
+        eType="ecore:EClass repository.ecore#//Interface"/>
   </eClassifiers>
 </ecore:EPackage>

@@ -55,7 +55,7 @@
       <details key="NoAllocation" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatedAssemblyContext->collect(allocationContext)->size() = 0"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
-        lowerBound="1" containment="true"/>
+        lowerBound="1" eType="ecore:EClass assembly.ecore#//AssemblyContext" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Branch"/>
   <eClassifiers xsi:type="ecore:EClass" name="InternalAction"/>
