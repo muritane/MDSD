@@ -7,7 +7,7 @@ import Allocation.AllocationContext;
 import Assembly.AssemblyContext;
 import Assembly.AssemblyPackage;
 
-import Environment.Environment;
+import Environment.SystemEnvironment;
 
 import Repository.Interface;
 
@@ -82,7 +82,7 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 	 * @generated
 	 * @ordered
 	 */
-	protected Environment environment;
+	protected SystemEnvironment environment;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,10 +206,10 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Environment getEnvironment() {
+	public SystemEnvironment getEnvironment() {
 		if (environment != null && environment.eIsProxy()) {
 			InternalEObject oldEnvironment = (InternalEObject)environment;
-			environment = (Environment)eResolveProxy(oldEnvironment);
+			environment = (SystemEnvironment)eResolveProxy(oldEnvironment);
 			if (environment != oldEnvironment) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, AssemblyPackage.SYSTEM__ENVIRONMENT, oldEnvironment, environment));
@@ -223,7 +223,7 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Environment basicGetEnvironment() {
+	public SystemEnvironment basicGetEnvironment() {
 		return environment;
 	}
 
@@ -232,8 +232,8 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setEnvironment(Environment newEnvironment) {
-		Environment oldEnvironment = environment;
+	public void setEnvironment(SystemEnvironment newEnvironment) {
+		SystemEnvironment oldEnvironment = environment;
 		environment = newEnvironment;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, AssemblyPackage.SYSTEM__ENVIRONMENT, oldEnvironment, environment));
@@ -298,7 +298,7 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 				setAllocationContext((AllocationContext)newValue);
 				return;
 			case AssemblyPackage.SYSTEM__ENVIRONMENT:
-				setEnvironment((Environment)newValue);
+				setEnvironment((SystemEnvironment)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -322,7 +322,7 @@ public class SystemImpl extends MinimalEObjectImpl.Container implements Assembly
 				setAllocationContext((AllocationContext)null);
 				return;
 			case AssemblyPackage.SYSTEM__ENVIRONMENT:
-				setEnvironment((Environment)null);
+				setEnvironment((SystemEnvironment)null);
 				return;
 		}
 		super.eUnset(featureID);

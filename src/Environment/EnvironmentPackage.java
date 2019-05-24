@@ -150,14 +150,14 @@ public interface EnvironmentPackage extends EPackage {
 	int CONTAINER_OPERATION_COUNT = 0;
 
 	/**
-	 * The meta object id for the '{@link Environment.impl.EnvironmentImpl <em>Environment</em>}' class.
+	 * The meta object id for the '{@link Environment.impl.SystemEnvironmentImpl <em>System Environment</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see Environment.impl.EnvironmentImpl
-	 * @see Environment.impl.EnvironmentPackageImpl#getEnvironment()
+	 * @see Environment.impl.SystemEnvironmentImpl
+	 * @see Environment.impl.EnvironmentPackageImpl#getSystemEnvironment()
 	 * @generated
 	 */
-	int ENVIRONMENT = 2;
+	int SYSTEM_ENVIRONMENT = 2;
 
 	/**
 	 * The feature id for the '<em><b>Container</b></em>' containment reference list.
@@ -166,7 +166,7 @@ public interface EnvironmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENVIRONMENT__CONTAINER = 0;
+	int SYSTEM_ENVIRONMENT__CONTAINER = 0;
 
 	/**
 	 * The feature id for the '<em><b>Link</b></em>' containment reference list.
@@ -175,25 +175,25 @@ public interface EnvironmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENVIRONMENT__LINK = 1;
+	int SYSTEM_ENVIRONMENT__LINK = 1;
 
 	/**
-	 * The number of structural features of the '<em>Environment</em>' class.
+	 * The number of structural features of the '<em>System Environment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENVIRONMENT_FEATURE_COUNT = 2;
+	int SYSTEM_ENVIRONMENT_FEATURE_COUNT = 2;
 
 	/**
-	 * The number of operations of the '<em>Environment</em>' class.
+	 * The number of operations of the '<em>System Environment</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ENVIRONMENT_OPERATION_COUNT = 0;
+	int SYSTEM_ENVIRONMENT_OPERATION_COUNT = 0;
 
 
 	/**
@@ -261,36 +261,36 @@ public interface EnvironmentPackage extends EPackage {
 	EAttribute getContainer_Name();
 
 	/**
-	 * Returns the meta object for class '{@link Environment.Environment <em>Environment</em>}'.
+	 * Returns the meta object for class '{@link Environment.SystemEnvironment <em>System Environment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Environment</em>'.
-	 * @see Environment.Environment
+	 * @return the meta object for class '<em>System Environment</em>'.
+	 * @see Environment.SystemEnvironment
 	 * @generated
 	 */
-	EClass getEnvironment();
+	EClass getSystemEnvironment();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Environment.Environment#getContainer <em>Container</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Environment.SystemEnvironment#getContainer <em>Container</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Container</em>'.
-	 * @see Environment.Environment#getContainer()
-	 * @see #getEnvironment()
+	 * @see Environment.SystemEnvironment#getContainer()
+	 * @see #getSystemEnvironment()
 	 * @generated
 	 */
-	EReference getEnvironment_Container();
+	EReference getSystemEnvironment_Container();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link Environment.Environment#getLink <em>Link</em>}'.
+	 * Returns the meta object for the containment reference list '{@link Environment.SystemEnvironment#getLink <em>Link</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Link</em>'.
-	 * @see Environment.Environment#getLink()
-	 * @see #getEnvironment()
+	 * @see Environment.SystemEnvironment#getLink()
+	 * @see #getSystemEnvironment()
 	 * @generated
 	 */
-	EReference getEnvironment_Link();
+	EReference getSystemEnvironment_Link();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -368,14 +368,14 @@ public interface EnvironmentPackage extends EPackage {
 		EAttribute CONTAINER__NAME = eINSTANCE.getContainer_Name();
 
 		/**
-		 * The meta object literal for the '{@link Environment.impl.EnvironmentImpl <em>Environment</em>}' class.
+		 * The meta object literal for the '{@link Environment.impl.SystemEnvironmentImpl <em>System Environment</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see Environment.impl.EnvironmentImpl
-		 * @see Environment.impl.EnvironmentPackageImpl#getEnvironment()
+		 * @see Environment.impl.SystemEnvironmentImpl
+		 * @see Environment.impl.EnvironmentPackageImpl#getSystemEnvironment()
 		 * @generated
 		 */
-		EClass ENVIRONMENT = eINSTANCE.getEnvironment();
+		EClass SYSTEM_ENVIRONMENT = eINSTANCE.getSystemEnvironment();
 
 		/**
 		 * The meta object literal for the '<em><b>Container</b></em>' containment reference list feature.
@@ -383,7 +383,7 @@ public interface EnvironmentPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENVIRONMENT__CONTAINER = eINSTANCE.getEnvironment_Container();
+		EReference SYSTEM_ENVIRONMENT__CONTAINER = eINSTANCE.getSystemEnvironment_Container();
 
 		/**
 		 * The meta object literal for the '<em><b>Link</b></em>' containment reference list feature.
@@ -391,7 +391,7 @@ public interface EnvironmentPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference ENVIRONMENT__LINK = eINSTANCE.getEnvironment_Link();
+		EReference SYSTEM_ENVIRONMENT__LINK = eINSTANCE.getSystemEnvironment_Link();
 
 	}
 

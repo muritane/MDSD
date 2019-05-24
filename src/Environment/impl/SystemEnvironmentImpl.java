@@ -2,9 +2,9 @@
  */
 package Environment.impl;
 
-import Environment.Environment;
 import Environment.EnvironmentPackage;
 import Environment.Link;
+import Environment.SystemEnvironment;
 
 import java.util.Collection;
 
@@ -22,19 +22,19 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Environment</b></em>'.
+ * An implementation of the model object '<em><b>System Environment</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link Environment.impl.EnvironmentImpl#getContainer <em>Container</em>}</li>
- *   <li>{@link Environment.impl.EnvironmentImpl#getLink <em>Link</em>}</li>
+ *   <li>{@link Environment.impl.SystemEnvironmentImpl#getContainer <em>Container</em>}</li>
+ *   <li>{@link Environment.impl.SystemEnvironmentImpl#getLink <em>Link</em>}</li>
  * </ul>
  *
  * @generated
  */
-public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Environment {
+public class SystemEnvironmentImpl extends MinimalEObjectImpl.Container implements SystemEnvironment {
 	/**
 	 * The cached value of the '{@link #getContainer() <em>Container</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
@@ -60,7 +60,7 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected EnvironmentImpl() {
+	protected SystemEnvironmentImpl() {
 		super();
 	}
 
@@ -71,7 +71,7 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return EnvironmentPackage.Literals.ENVIRONMENT;
+		return EnvironmentPackage.Literals.SYSTEM_ENVIRONMENT;
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	 */
 	public EList<Environment.Container> getContainer() {
 		if (container == null) {
-			container = new EObjectContainmentEList<Environment.Container>(Environment.Container.class, this, EnvironmentPackage.ENVIRONMENT__CONTAINER);
+			container = new EObjectContainmentEList<Environment.Container>(Environment.Container.class, this, EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER);
 		}
 		return container;
 	}
@@ -93,7 +93,7 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	 */
 	public EList<Link> getLink() {
 		if (link == null) {
-			link = new EObjectContainmentEList<Link>(Link.class, this, EnvironmentPackage.ENVIRONMENT__LINK);
+			link = new EObjectContainmentEList<Link>(Link.class, this, EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK);
 		}
 		return link;
 	}
@@ -106,9 +106,9 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case EnvironmentPackage.ENVIRONMENT__CONTAINER:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER:
 				return ((InternalEList<?>)getContainer()).basicRemove(otherEnd, msgs);
-			case EnvironmentPackage.ENVIRONMENT__LINK:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK:
 				return ((InternalEList<?>)getLink()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -122,9 +122,9 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case EnvironmentPackage.ENVIRONMENT__CONTAINER:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER:
 				return getContainer();
-			case EnvironmentPackage.ENVIRONMENT__LINK:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK:
 				return getLink();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -139,11 +139,11 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case EnvironmentPackage.ENVIRONMENT__CONTAINER:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER:
 				getContainer().clear();
 				getContainer().addAll((Collection<? extends Environment.Container>)newValue);
 				return;
-			case EnvironmentPackage.ENVIRONMENT__LINK:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK:
 				getLink().clear();
 				getLink().addAll((Collection<? extends Link>)newValue);
 				return;
@@ -159,10 +159,10 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case EnvironmentPackage.ENVIRONMENT__CONTAINER:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER:
 				getContainer().clear();
 				return;
-			case EnvironmentPackage.ENVIRONMENT__LINK:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK:
 				getLink().clear();
 				return;
 		}
@@ -177,12 +177,12 @@ public class EnvironmentImpl extends MinimalEObjectImpl.Container implements Env
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case EnvironmentPackage.ENVIRONMENT__CONTAINER:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__CONTAINER:
 				return container != null && !container.isEmpty();
-			case EnvironmentPackage.ENVIRONMENT__LINK:
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT__LINK:
 				return link != null && !link.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
 
-} //EnvironmentImpl
+} //SystemEnvironmentImpl

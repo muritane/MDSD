@@ -56,7 +56,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
         eType="ecore:EClass allocation.ecore#//AllocationContext" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"
-        eType="ecore:EClass environment.ecore#//Environment"/>
+        eType="ecore:EClass environment.ecore#//SystemEnvironment"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Role"/>
   <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">

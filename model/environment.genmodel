@@ -13,9 +13,9 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference environment.ecore#//Container/links"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute environment.ecore#//Container/name"/>
     </genClasses>
-    <genClasses ecoreClass="environment.ecore#//Environment">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference environment.ecore#//Environment/container"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference environment.ecore#//Environment/link"/>
+    <genClasses ecoreClass="environment.ecore#//SystemEnvironment">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference environment.ecore#//SystemEnvironment/container"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference environment.ecore#//SystemEnvironment/link"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

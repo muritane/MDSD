@@ -58,7 +58,7 @@ public class EnvironmentFactoryImpl extends EFactoryImpl implements EnvironmentF
 		switch (eClass.getClassifierID()) {
 			case EnvironmentPackage.LINK: return createLink();
 			case EnvironmentPackage.CONTAINER: return createContainer();
-			case EnvironmentPackage.ENVIRONMENT: return createEnvironment();
+			case EnvironmentPackage.SYSTEM_ENVIRONMENT: return createSystemEnvironment();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -89,9 +89,9 @@ public class EnvironmentFactoryImpl extends EFactoryImpl implements EnvironmentF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Environment createEnvironment() {
-		EnvironmentImpl environment = new EnvironmentImpl();
-		return environment;
+	public SystemEnvironment createSystemEnvironment() {
+		SystemEnvironmentImpl systemEnvironment = new SystemEnvironmentImpl();
+		return systemEnvironment;
 	}
 
 	/**

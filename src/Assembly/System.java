@@ -4,7 +4,7 @@ package Assembly;
 
 import Allocation.AllocationContext;
 
-import Environment.Environment;
+import Environment.SystemEnvironment;
 
 import Repository.Interface;
 
@@ -94,12 +94,12 @@ public interface System extends EObject {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Environment</em>' reference.
-	 * @see #setEnvironment(Environment)
+	 * @see #setEnvironment(SystemEnvironment)
 	 * @see Assembly.AssemblyPackage#getSystem_Environment()
 	 * @model required="true"
 	 * @generated
 	 */
-	Environment getEnvironment();
+	SystemEnvironment getEnvironment();
 
 	/**
 	 * Sets the value of the '{@link Assembly.System#getEnvironment <em>Environment</em>}' reference.
@@ -109,6 +109,6 @@ public interface System extends EObject {
 	 * @see #getEnvironment()
 	 * @generated
 	 */
-	void setEnvironment(Environment value);
+	void setEnvironment(SystemEnvironment value);
 
 } // System

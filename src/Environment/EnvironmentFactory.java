@@ -40,13 +40,13 @@ public interface EnvironmentFactory extends EFactory {
 	Container createContainer();
 
 	/**
-	 * Returns a new object of class '<em>Environment</em>'.
+	 * Returns a new object of class '<em>System Environment</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Environment</em>'.
+	 * @return a new object of class '<em>System Environment</em>'.
 	 * @generated
 	 */
-	Environment createEnvironment();
+	SystemEnvironment createSystemEnvironment();
 
 	/**
 	 * Returns the package supported by this factory.

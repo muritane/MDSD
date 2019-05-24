@@ -76,8 +76,8 @@ public class EnvironmentAdapterFactory extends AdapterFactoryImpl {
 				return createContainerAdapter();
 			}
 			@Override
-			public Adapter caseEnvironment(Environment object) {
-				return createEnvironmentAdapter();
+			public Adapter caseSystemEnvironment(SystemEnvironment object) {
+				return createSystemEnvironmentAdapter();
 			}
 			@Override
 			public Adapter defaultCase(EObject object) {
@@ -128,16 +128,16 @@ public class EnvironmentAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link Environment.Environment <em>Environment</em>}'.
+	 * Creates a new adapter for an object of class '{@link Environment.SystemEnvironment <em>System Environment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see Environment.Environment
+	 * @see Environment.SystemEnvironment
 	 * @generated
 	 */
-	public Adapter createEnvironmentAdapter() {
+	public Adapter createSystemEnvironmentAdapter() {
 		return null;
 	}
 

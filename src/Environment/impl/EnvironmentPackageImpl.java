@@ -10,10 +10,10 @@ import Assembly.AssemblyPackage;
 
 import Assembly.impl.AssemblyPackageImpl;
 
-import Environment.Environment;
 import Environment.EnvironmentFactory;
 import Environment.EnvironmentPackage;
 import Environment.Link;
+import Environment.SystemEnvironment;
 
 import Repository.RepositoryPackage;
 
@@ -52,7 +52,7 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass environmentEClass = null;
+	private EClass systemEnvironmentEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -188,8 +188,8 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getEnvironment() {
-		return environmentEClass;
+	public EClass getSystemEnvironment() {
+		return systemEnvironmentEClass;
 	}
 
 	/**
@@ -197,8 +197,8 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEnvironment_Container() {
-		return (EReference)environmentEClass.getEStructuralFeatures().get(0);
+	public EReference getSystemEnvironment_Container() {
+		return (EReference)systemEnvironmentEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -206,8 +206,8 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getEnvironment_Link() {
-		return (EReference)environmentEClass.getEStructuralFeatures().get(1);
+	public EReference getSystemEnvironment_Link() {
+		return (EReference)systemEnvironmentEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -246,9 +246,9 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 		createEReference(containerEClass, CONTAINER__LINKS);
 		createEAttribute(containerEClass, CONTAINER__NAME);
 
-		environmentEClass = createEClass(ENVIRONMENT);
-		createEReference(environmentEClass, ENVIRONMENT__CONTAINER);
-		createEReference(environmentEClass, ENVIRONMENT__LINK);
+		systemEnvironmentEClass = createEClass(SYSTEM_ENVIRONMENT);
+		createEReference(systemEnvironmentEClass, SYSTEM_ENVIRONMENT__CONTAINER);
+		createEReference(systemEnvironmentEClass, SYSTEM_ENVIRONMENT__LINK);
 	}
 
 	/**
@@ -289,9 +289,9 @@ public class EnvironmentPackageImpl extends EPackageImpl implements EnvironmentP
 		initEReference(getContainer_Links(), this.getLink(), null, "links", null, 2, -1, Environment.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContainer_Name(), ecorePackage.getEString(), "name", null, 0, 1, Environment.Container.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(environmentEClass, Environment.class, "Environment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getEnvironment_Container(), this.getContainer(), null, "container", null, 1, -1, Environment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getEnvironment_Link(), this.getLink(), null, "link", null, 0, -1, Environment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(systemEnvironmentEClass, SystemEnvironment.class, "SystemEnvironment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getSystemEnvironment_Container(), this.getContainer(), null, "container", null, 1, -1, SystemEnvironment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getSystemEnvironment_Link(), this.getLink(), null, "link", null, 0, -1, SystemEnvironment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
