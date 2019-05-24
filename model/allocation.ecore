@@ -9,7 +9,7 @@
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetContainer" upperBound="-1"
-        containment="true"/>
+        eType="ecore:EClass environment.ecore#//Container" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="allocatedAssemblyContext"
         lowerBound="1" upperBound="-1" eType="ecore:EClass assembly.ecore#//AssemblyContext"/>
   </eClassifiers>
