@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated allocation -->
+      <package
+            uri="platform:/resource/Blatt1/model/allocation.ecore#//allocation"
+            class="Allocation.AllocationPackage"
+            genModel="model/allocation.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated allocation -->
+      <package
+            uri="platform:/resource/Blatt1/model/environment.ecore#//environment"
+            class="Environment.EnvironmentPackage"
+            genModel="model/allocation.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated allocation -->
+      <package
+            uri="platform:/resource/Blatt1/model/assembly.ecore#//assembly"
+            class="Assembly.AssemblyPackage"
+            genModel="model/allocation.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated allocation -->
+      <package
+            uri="platform:/resource/Blatt1/model/repository.ecore#//repository"
+            class="Repository.RepositoryPackage"
+            genModel="model/allocation.genmodel"/>
+   </extension>
+</plugin>
