@@ -27,7 +27,7 @@ Package Environment <platform:/resource/Blatt1/model/environment.ecore#//environ
     Reference links : Link<<2..*>>
     Attribute name : EString
 
-  Class Environment
+  Class SystemEnvironment
     Reference container : Container<<1..*>>
     Reference link : Link<<0..*>>
 
@@ -50,7 +50,7 @@ Package Assembly <platform:/resource/Blatt1/model/assembly.ecore#//assembly>
     Reference encapsulatedAssemblyContext : AssemblyContext<<1..1>>
     Reference providedInterfaces : Interface<<1..*>>
     Reference allocationContext : AllocationContext<<1..1>>
-    Reference environment : Environment<<1..1>>
+    Reference environment : SystemEnvironment<<1..1>>
 
   Class Role
 
