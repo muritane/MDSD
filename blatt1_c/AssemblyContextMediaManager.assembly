@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="MediaManager">
+  <component name="MediaManager">
+    <providedInterface name="MediaStore">
+      <signature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="MediaStore">
+      <correspondingSignature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <requiredInterface href="InterfaceSound.repository#/"/>
+    <requiredService href="AudioDBService.repository#/"/>
+    <requiredService href="SoundService.repository#/"/>
+  </component>
+</assembly:AssemblyContext>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="DBCache">
+  <component requiredService="//@component.0/@providedService.0" name="DBCache">
+    <providedInterface name="AudioDB">
+      <signature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="AudioDB">
+      <correspondingSignature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceAudioDB.repository#/"/>
+  </component>
+</assembly:AssemblyContext>
