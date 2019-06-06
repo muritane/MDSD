@@ -3,5 +3,5 @@
   <encapsulatedAssemblyContext name="AssemblyContext">
     <allocationContext href="My.allocation#/"/>
   </encapsulatedAssemblyContext>
-  <environment href="My.environment#/"/>
+  <environment href="SystemEnvironment.environment#/"/>
 </assembly:System>
