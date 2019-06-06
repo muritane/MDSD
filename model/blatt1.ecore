@@ -142,7 +142,7 @@
         <details key="AssemblyContainerAllocationContext" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatedAssemblyContext->collect(allocationContext)->forAll(c | self.allocationContext.targetContainer -> includes(c))"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
-          lowerBound="1" eType="#//Assembly/AssemblyContext" containment="true"/>
+          lowerBound="1" upperBound="-1" eType="#//Assembly/AssemblyContext" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterfaces" lowerBound="1"
           upperBound="-1" eType="#//Repository/Interface" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
