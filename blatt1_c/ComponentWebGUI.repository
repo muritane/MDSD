@@ -20,6 +20,6 @@
       <parameterType href="My.types#/"/>
     </correspondingSignature>
   </providedService>
-  <requiredInterface href="MediaStore.repository#/"/>
+  <requiredInterface href="InterfaceMediaStore.repository#/"/>
   <requiredService href="MediaStoreService.repository#/"/>
 </repository:Component>

@@ -20,7 +20,6 @@
       <parameterType href="My.types#/"/>
     </correspondingSignature>
   </providedService>
-  <requiredInterface href="AudioDB.repository#/"/>
   <requiredInterface href="Sound.repository#/"/>
   <requiredService href="AudioDBService.repository#/"/>
   <requiredService href="SoundService.repository#/"/>
