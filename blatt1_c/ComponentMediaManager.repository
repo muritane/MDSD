@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repository:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" name="MediaManager">
   <providedInterface name="MediaStore">
-    <signature name="download">
+    <signature name="upload">
       <returnType href="My.types#/"/>
       <parameterType href="My.types#/"/>
     </signature>
-    <signature name="upload">
+    <signature name="download">
       <returnType href="My.types#/"/>
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
   <providedService name="MediaStore">
-    <correspondingSignature name="upload">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </correspondingSignature>
     <correspondingSignature name="download">
       <returnType href="My.types#/"/>
       <parameterType href="My.types#/"/>
     </correspondingSignature>
+    <correspondingSignature name="upload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
   </providedService>
-  <requiredInterface href="Sound.repository#/"/>
+  <requiredInterface href="InterfaceAudioDB.repository#/"/>
+  <requiredInterface href="InterfaceSound.repository#/"/>
   <requiredService href="AudioDBService.repository#/"/>
   <requiredService href="SoundService.repository#/"/>
 </repository:Component>
