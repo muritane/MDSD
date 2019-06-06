@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assembly:AssemblyConnector xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly">
-  <providedAssemblyContext href="AssemblyContextMediaManager.assembly#/"/>
+  <providedAssemblyContext href="AssemblyContextAppServer.assembly#/"/>
   <requiredAssemblyContext href="AssemblyContextWebGUI.assembly#/"/>
   <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
-  <providedRole href="ProvidedMediaManagerRoleMediaStore.assembly#/"/>
+  <providedRole href="ProvidedAppServerRoleMediaStore.assembly#/"/>
 </assembly:AssemblyConnector>
