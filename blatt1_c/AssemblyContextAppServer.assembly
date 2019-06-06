@@ -3,6 +3,16 @@
   <requiredRole href="RequiredAppServerRoleAudioDB.assembly#/"/>
   <providedRole href="ProvidedAppServerRoleMediaStore.assembly#/"/>
   <component xsi:type="repository:CompositeComponent" name="MediaStore">
+    <providedInterface name="MediaStore">
+      <signature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
     <providedService name="MediaStore">
       <correspondingSignature name="download">
         <returnType href="My.types#/"/>
@@ -14,44 +24,11 @@
       </correspondingSignature>
     </providedService>
     <requiredInterface href="InterfaceAudioDB.repository#/"/>
-    <encapsulatedAssemblyContext name="ApplicationServerCompositeAssemblyContext">
-      <component requiredService="//@component.0/@encapsulatedAssemblyContext/@component.0/@providedService.0" name="DBCache">
-        <providedInterface name="AudioDB">
-          <signature name="addFile">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </signature>
-          <signature name="queryDB">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </signature>
-        </providedInterface>
-        <providedService name="AudioDB">
-          <correspondingSignature name="addFile">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </correspondingSignature>
-          <correspondingSignature name="queryDB">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </correspondingSignature>
-        </providedService>
-        <requiredInterface href="InterfaceAudioDB.repository#/"/>
-      </component>
-      <component name="DigitalWatermarking">
-        <providedInterface name="Sound">
-          <signature name="watermark">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </signature>
-        </providedInterface>
-        <providedService name="Sound">
-          <correspondingSignature name="watermark">
-            <returnType href="My.types#/"/>
-            <parameterType href="My.types#/"/>
-          </correspondingSignature>
-        </providedService>
-      </component>
+    <requiredService href="AudioDBService.repository#/"/>
+    <encapsulatedAssemblyContext name="MediaManager">
+      <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
+      <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
+      <providedRole/>
       <component name="MediaManager">
         <providedInterface name="MediaStore">
           <signature name="upload">
@@ -77,6 +54,50 @@
         <requiredInterface href="InterfaceSound.repository#/"/>
         <requiredService href="AudioDBService.repository#/"/>
         <requiredService href="SoundService.repository#/"/>
+      </component>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext name="DigitalWatermarking">
+      <providedRole/>
+      <component name="DigitalWatermarking">
+        <providedInterface name="Sound">
+          <signature name="watermark">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </signature>
+        </providedInterface>
+        <providedService name="Sound">
+          <correspondingSignature name="watermark">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </correspondingSignature>
+        </providedService>
+      </component>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext name="DBCache">
+      <requiredRole href="RoleRequiredAudioDB.assembly#/"/>
+      <providedRole/>
+      <component requiredService="//@component.0/@encapsulatedAssemblyContext.2/@component.0/@providedService.0" name="DBCache">
+        <providedInterface name="AudioDB">
+          <signature name="addFile">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </signature>
+          <signature name="queryDB">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </signature>
+        </providedInterface>
+        <providedService name="AudioDB">
+          <correspondingSignature name="addFile">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </correspondingSignature>
+          <correspondingSignature name="queryDB">
+            <returnType href="My.types#/"/>
+            <parameterType href="My.types#/"/>
+          </correspondingSignature>
+        </providedService>
+        <requiredInterface href="InterfaceAudioDB.repository#/"/>
       </component>
     </encapsulatedAssemblyContext>
   </component>
