@@ -80,4 +80,5 @@
       </component>
     </encapsulatedAssemblyContext>
   </component>
+  <allocationContext href="AllocationContextAppServerComposite.allocation#/"/>
 </assembly:AssemblyContext>

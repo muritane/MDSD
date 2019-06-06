@@ -26,4 +26,5 @@
     <requiredInterface href="InterfaceMediaStore.repository#/"/>
     <requiredService href="MediaStoreService.repository#/"/>
   </component>
+  <allocationContext href="AllocationContextWebGUI.allocation#/"/>
 </assembly:AssemblyContext>

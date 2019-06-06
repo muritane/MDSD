@@ -23,4 +23,5 @@
       </correspondingSignature>
     </providedService>
   </component>
+  <allocationContext href="AllocationContextPoolingAudioDB.allocation#/"/>
 </assembly:AssemblyContext>
