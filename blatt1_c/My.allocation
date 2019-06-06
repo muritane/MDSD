@@ -6,5 +6,5 @@
   <targetContainer name="Database Server">
     <links href="DatabaseApplicationServerLink.environment#/"/>
   </targetContainer>
-  <allocatedAssemblyContext href="My.assembly#//@encapsulatedAssemblyContext"/>
+  <allocatedAssemblyContext href="MainSystem.assembly#//@encapsulatedAssemblyContext"/>
 </allocation:AllocationContext>
