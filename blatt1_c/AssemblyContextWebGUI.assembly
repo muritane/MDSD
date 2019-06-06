@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="WebGUI">
+  <providedRole href="ProvidedWebGUIRoleHTTP.assembly#/"/>
+  <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
   <component name="WebGUI">
     <providedInterface name="HTTP">
       <signature name="HTTPDownload">
