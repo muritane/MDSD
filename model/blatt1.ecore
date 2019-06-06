@@ -56,7 +56,7 @@
         <details key="NoAllocation" value="&#xA;&#x9;&#x9;&#x9;self.encapsulatedAssemblyContext->collect(allocationContext)->size() = 0"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
-          lowerBound="1" eType="#//Assembly/AssemblyContext" containment="true"/>
+          lowerBound="1" upperBound="-1" eType="#//Assembly/AssemblyContext" containment="true"/>
     </eClassifiers>
     <eSubpackages name="Types" nsURI="Types" nsPrefix="Types">
       <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//Repository/Types/Type"/>
