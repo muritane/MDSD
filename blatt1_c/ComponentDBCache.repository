@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<repository:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" name="DBCache">
+<repository:Component xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository" requiredService="//@providedService.0" name="DBCache">
   <providedInterface name="AudioDB">
     <signature name="addFile">
       <returnType href="My.types#/"/>
@@ -10,5 +10,15 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterface>
+  <providedService name="AudioDB">
+    <correspondingSignature name="addFile">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+    <correspondingSignature name="queryDB">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </correspondingSignature>
+  </providedService>
   <requiredInterface href="InterfaceAudioDB.repository#/"/>
 </repository:Component>
