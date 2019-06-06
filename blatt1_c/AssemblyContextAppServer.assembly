@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:assembly="http://www.example.org/blatt1/assembly" xmlns:repository="http://www.example.org/blatt1/repository" name="AppServer">
+  <providedRole href="ProvidedAppServerRoleMediaStore.assembly#/"/>
+  <requiredRole href="RequiredAppServerRoleAudioDB.assembly#/"/>
   <component xsi:type="repository:CompositeComponent" name="MediaStore">
     <providedService name="MediaStore">
       <correspondingSignature name="download">
