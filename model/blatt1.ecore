@@ -146,7 +146,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterfaces" lowerBound="1"
           upperBound="-1" eType="#//Repository/Interface" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="allocationContext" lowerBound="1"
-          eType="#//Allocation/AllocationContext" containment="true"/>
+          upperBound="-1" eType="#//Allocation/AllocationContext" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="environment" lowerBound="1"
           eType="#//Environment/Environment"/>
     </eClassifiers>
