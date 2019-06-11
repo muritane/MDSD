@@ -6,3 +6,5 @@ code generator can be extended.
 This can be disabled with -vmargs -Dorg.eclipse.emf.examples.generator.validator=false.
 
 Package blatt1 <http://www.example.org/blatt1>
+
+  Class DummyClass

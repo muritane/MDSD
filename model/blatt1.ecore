@@ -4,6 +4,7 @@
   <eAnnotations source="http://www.eclipse.org/OCL/Import">
     <details key="ecore.xml.type" value="http://www.eclipse.org/emf/2003/XMLType"/>
   </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="DummyClass"/>
   <eSubpackages name="Repository" nsURI="http://www.example.org/blatt1/repository"
       nsPrefix="repository">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">

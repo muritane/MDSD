@@ -5,6 +5,7 @@
     complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
   <foreignModel>blatt1.ecore</foreignModel>
   <genPackages prefix="Blatt1" disposableProviderFactory="true" ecorePackage="blatt1.ecore#/">
+    <genClasses ecoreClass="blatt1.ecore#//DummyClass"/>
     <nestedGenPackages prefix="Repository" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Repository">
       <genClasses ecoreClass="blatt1.ecore#//Repository/Interface">
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Interface/signature"/>
@@ -12,15 +13,16 @@
       </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Repository/Service">
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Service/correspondingSignature"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Repository/Service/name"/>
       </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Repository/Component">
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedInterface"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiredService"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/behaviourDescription"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedService"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiredInterface"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedService"/>
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiredService"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/behaviourDescription"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Repository/Component/name"/>
       </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Repository/CompositeComponent">
@@ -53,19 +55,18 @@
         <genClasses ecoreClass="blatt1.ecore#//Repository/Behaviour/InternalAction"/>
         <genClasses ecoreClass="blatt1.ecore#//Repository/Behaviour/Loop"/>
         <genClasses ecoreClass="blatt1.ecore#//Repository/Behaviour/BehaviorDescription">
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/internalActions"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/loops"/>
+          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/branches"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/internalActions"/>
-          <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/loops"/>
-          <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/branches"/>
-          <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/calledServices"/>
+              ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Behaviour/BehaviorDescription/calledServices"/>
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
     <nestedGenPackages prefix="Assembly" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Assembly">
       <genClasses ecoreClass="blatt1.ecore#//Assembly/AssemblyContext">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/requiredRole"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/requiredRole"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/providedRole"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/component"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -89,7 +90,9 @@
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/System/environment"/>
       </genClasses>
-      <genClasses ecoreClass="blatt1.ecore#//Assembly/Role"/>
+      <genClasses ecoreClass="blatt1.ecore#//Assembly/Role">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Assembly/Role/name"/>
+      </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Assembly/DelegationConnector">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/DelegationConnector/role"/>
