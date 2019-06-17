@@ -59,6 +59,7 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="encapsulatedAssemblyContext"
           lowerBound="1" upperBound="-1" eType="#//Assembly/AssemblyContext" containment="true"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Repository"/>
     <eSubpackages name="Types" nsURI="Types" nsPrefix="Types">
       <eClassifiers xsi:type="ecore:EClass" name="List" eSuperTypes="#//Repository/Types/Type"/>
       <eClassifiers xsi:type="ecore:EClass" name="Map" eSuperTypes="#//Repository/Types/Type"/>
