@@ -73,5 +73,15 @@
     </component>
     <allocationContext href="AllocationContextWebGUI.allocation#/"/>
   </encapsulatedAssemblyContext>
+  <providedInterfaces name="HTTP">
+    <signature name="HTTPDownload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+    <signature name="HTTPUpload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+  </providedInterfaces>
   <environment href="SystemEnvironment.environment#/"/>
 </assembly:System>
