@@ -73,7 +73,7 @@
   <encapsulatedAssemblyContext name="DBCache">
     <requiredRole href="RoleRequiredAudioDB.assembly#/"/>
     <providedRole/>
-    <component requiredService="//@encapsulatedAssemblyContext.2/@component.0/@providedService.0" name="DBCache">
+    <component name="DBCache">
       <providedInterface name="AudioDB">
         <signature name="addFile">
           <returnType href="My.types#/"/>
