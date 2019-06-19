@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://www.example.org/blatt1/allocation">
+  <System href="MainSystem.assembly#/"/>
+  <Environment href="SystemEnvironment.environment#/"/>
+  <AllocationContexts href="AllocationContextAppServerComposite.allocation#/"/>
+  <AllocationContexts href="AllocationContextPoolingAudioDB.allocation#/"/>
+  <AllocationContexts href="AllocationContextWebGUI.allocation#/"/>
+</allocation:Allocation>
