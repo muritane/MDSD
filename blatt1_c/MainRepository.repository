@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository">
+  <Components href="ComponentDBCache.repository#/"/>
+  <Components href="ComponentDigitalWatermarking.repository#/"/>
+  <Components href="ComponentMediaManager.repository#/"/>
+  <Components href="ComponentPoolingAudioDB.repository#/"/>
+  <Components href="ComponentWebGUI.repository#/"/>
+  <Components href="CompositeComponentAppServer.repository#/"/>
+  <Interfaces href="InterfaceAudioDB.repository#/"/>
+  <Interfaces href="InterfaceHTTP.repository#/"/>
+  <Interfaces href="InterfaceMediaStore.repository#/"/>
+  <Interfaces href="InterfaceSound.repository#/"/>
+</repository:Repository>
