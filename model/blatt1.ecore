@@ -170,6 +170,13 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="allocatedAssemblyContext"
           lowerBound="1" upperBound="-1" eType="#//Assembly/AssemblyContext"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Allocation">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="System" lowerBound="1"
+          eType="#//Assembly/System"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="Environment" eType="#//Environment/Environment"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="AllocationContexts" upperBound="-1"
+          eType="#//Allocation/AllocationContext"/>
+    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="Environment" nsURI="http://www.example.org/blatt1/environment"
       nsPrefix="environment">
