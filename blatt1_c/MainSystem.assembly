@@ -83,5 +83,4 @@
       <parameterType href="My.types#/"/>
     </signature>
   </providedInterfaces>
-  <environment href="SystemEnvironment.environment#/"/>
 </assembly:System>
