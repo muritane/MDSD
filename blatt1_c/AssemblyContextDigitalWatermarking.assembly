@@ -14,5 +14,6 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
+    <behaviourDescription/>
   </component>
 </assembly:AssemblyContext>
