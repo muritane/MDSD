@@ -34,17 +34,20 @@
         <details key="constraints" value="ProvidedServiceSignature ServiceRequiredIsRequired"/>
       </eAnnotations>
       <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-        <details key="ProvidedServiceSignature" value="&#xA;&#x9;&#x9;&#x9;self.providedInterface -> forAll(i | self.providedService-> exists(s | i.signature->includes(s.correspondingSignature)))"/>
+        <eAnnotations source="http://www.eclipse.org/emf/2002/GenModel">
+          <details key="documentation" value="Idee1&#xA;self.providedInterface -> forAll(i | self.providedService-> exists(s | i.signature.flatten.asOrderedSet = s.correspondingSignature.flatten.asOrderedSet)&#xA;Idee2&#xA;self.providedInterface -> forAll(i | self.providedService-> exists(s | i.signature->forAll(sign | s.correspondingSignature.includes(sign))&#xA;*i.signature->forAll ersetzen durhc aufrufe der parameter und des return types"/>
+        </eAnnotations>
+        <details key="ProvidedServiceSignature" value="&#xA;&#x9;&#x9;&#x9;/*self.providedInterface -> forAll(i | self.providedService-> exists(s | i.signature->includes(s.correspondingSignature)));*/&#xA;&#x9;&#x9;&#x9;self.providedInterface -> forAll(i | self.providedService-> exists(s | i.signature->flatten()->asOrderedSet() = s.correspondingSignature->flatten()->asOrderedSet()))"/>
         <details key="ServiceRequiredIsRequired" value="&#xA;&#x9;&#x9;&#x9;self.requiredService->forAll(s | self.requiredInterface->collect(signature)->asSet()->includes(s.correspondingSignature))"/>
       </eAnnotations>
       <eStructuralFeatures xsi:type="ecore:EReference" name="providedInterface" upperBound="-1"
           eType="#//Repository/Interface" containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="providedService" lowerBound="1"
-          upperBound="-1" eType="#//Repository/Service" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="providedService" upperBound="-1"
+          eType="#//Repository/Service" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="requiredInterface" upperBound="-1"
           eType="#//Repository/Interface"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredService" lowerBound="1"
-          upperBound="-1" eType="#//Repository/Service"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="requiredService" upperBound="-1"
+          eType="#//Repository/Service"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="behaviourDescription"
           lowerBound="1" eType="#//Repository/Behaviour/BehaviorDescription" containment="true"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
