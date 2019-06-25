@@ -22,4 +22,7 @@
   </providedService>
   <requiredInterface href="InterfaceMediaStore.repository#/"/>
   <requiredService href="MediaStoreService.repository#/"/>
+  <behaviourDescription>
+    <calledServices href="MediaStoreService.repository#/"/>
+  </behaviourDescription>
 </repository:Component>
