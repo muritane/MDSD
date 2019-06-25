@@ -2,7 +2,7 @@
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="MediaManager">
   <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
   <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
-  <providedRole href="ProvidedMediaManagerRoleAudioDB.assembly#/"/>
+  <providedRole name="ProvidedMediaStore"/>
   <component name="MediaManager">
     <providedInterface name="MediaStore">
       <signature name="upload">
