@@ -3,5 +3,5 @@
   <targetContainer name="Application Server">
     <links href="DatabaseApplicationServerLink.environment#/"/>
   </targetContainer>
-  <allocatedAssemblyContext href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext"/>
+  <allocatedAssemblyContext href="AssemblyContextAppServer.assembly#/"/>
 </allocation:AllocationContext>
