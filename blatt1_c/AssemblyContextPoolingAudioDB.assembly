@@ -22,6 +22,7 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
+    <behaviourDescription/>
   </component>
   <allocationContext href="AllocationContextPoolingAudioDB.allocation#/"/>
 </assembly:AssemblyContext>
