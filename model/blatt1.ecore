@@ -165,7 +165,7 @@
     </eAnnotations>
     <eClassifiers xsi:type="ecore:EClass" name="AllocationContext">
       <eStructuralFeatures xsi:type="ecore:EReference" name="targetContainer" lowerBound="1"
-          eType="#//Environment/Container" containment="true"/>
+          eType="#//Environment/Container"/>
       <eStructuralFeatures xsi:type="ecore:EReference" name="allocatedAssemblyContext"
           lowerBound="1" eType="#//Assembly/AssemblyContext"/>
     </eClassifiers>

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <allocation:AllocationContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://www.example.org/blatt1/allocation">
-  <targetContainer name="Application Server">
-    <links href="DatabaseApplicationServerLink.environment#/"/>
-  </targetContainer>
+  <targetContainer href="ApplicationServer.environment#/"/>
   <allocatedAssemblyContext href="AssemblyContextAppServer.assembly#/"/>
 </allocation:AllocationContext>
