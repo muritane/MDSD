@@ -21,4 +21,7 @@
     </correspondingSignature>
   </providedService>
   <requiredInterface href="InterfaceAudioDB.repository#/"/>
+  <behaviourDescription>
+    <calledServices href="AudioDBService.repository#/"/>
+  </behaviourDescription>
 </repository:Component>

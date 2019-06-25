@@ -12,4 +12,5 @@
       <parameterType href="My.types#/"/>
     </correspondingSignature>
   </providedService>
+  <behaviourDescription/>
 </repository:Component>

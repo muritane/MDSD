@@ -24,4 +24,8 @@
   <requiredInterface href="InterfaceSound.repository#/"/>
   <requiredService href="AudioDBService.repository#/"/>
   <requiredService href="SoundService.repository#/"/>
+  <behaviourDescription>
+    <calledServices href="AudioDBService.repository#/"/>
+    <calledServices href="SoundService.repository#/"/>
+  </behaviourDescription>
 </repository:Component>
