@@ -2,7 +2,7 @@
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="DBCache">
   <requiredRole href="RoleRequiredAudioDB.assembly#/"/>
   <providedRole name="ProvidedAudioDB"/>
-  <component name="DBCache">
+  <component requiredService="//@component/@providedService.0" name="DBCache">
     <providedInterface name="AudioDB">
       <signature name="addFile">
         <returnType href="My.types#/"/>
@@ -24,5 +24,8 @@
       </correspondingSignature>
     </providedService>
     <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <behaviourDescription>
+      <calledServices href="AudioDBService.repository#/"/>
+    </behaviourDescription>
   </component>
 </assembly:AssemblyContext>
