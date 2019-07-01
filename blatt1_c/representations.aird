@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" uid="_apW-0JwMEem2Tc1wwuCAIA" selectedViews="_frifQJwMEem2Tc1wwuCAIA" version="14.1.0.201810161215">
+  <semanticResources>AllocationContextAppServerComposite.allocation</semanticResources>
+  <semanticResources>AssemblyContextAppServer.assembly</semanticResources>
+  <semanticResources>RequiredAppServerRoleAudioDB.assembly</semanticResources>
+  <semanticResources>InterfaceAudioDB.repository</semanticResources>
+  <semanticResources>AudioDBService.repository</semanticResources>
+  <semanticResources>My.types</semanticResources>
+  <semanticResources>RequiredMediaManagerRoleAudioDB.assembly</semanticResources>
+  <semanticResources>RequiredMediaManagerRoleSound.assembly</semanticResources>
+  <semanticResources>InterfaceSound.repository</semanticResources>
+  <semanticResources>SoundService.repository</semanticResources>
+  <semanticResources>RoleRequiredAudioDB.assembly</semanticResources>
+  <semanticResources>AllocationContextPoolingAudioDB.allocation</semanticResources>
+  <semanticResources>AssemblyContextPoolingAudioDB.assembly</semanticResources>
+  <semanticResources>DatabaseApplicationServerLink.environment</semanticResources>
+  <semanticResources>ApplicationServer.environment</semanticResources>
+  <semanticResources>DatabaseServer.environment</semanticResources>
+  <semanticResources>AllocationContextWebGUI.allocation</semanticResources>
+  <semanticResources>AssemblyContextWebGUI.assembly</semanticResources>
+  <semanticResources>RequiredWebGUIRoleMediaStore.assembly</semanticResources>
+  <semanticResources>InterfaceMediaStore.repository</semanticResources>
+  <semanticResources>MediaStoreService.repository</semanticResources>
+  <semanticResources>AssemblyConnectorAudioDB1.assembly</semanticResources>
+  <semanticResources>ProvidedPoolingAudioDBRoleAudioDB.assembly</semanticResources>
+  <semanticResources>AssemblyConnectorAudioDB2.assembly</semanticResources>
+  <semanticResources>AssemblyContextDBCache.assembly</semanticResources>
+  <semanticResources>AssemblyContextMediaManager.assembly</semanticResources>
+  <semanticResources>ProvidedRoleAudioDB.assembly</semanticResources>
+  <semanticResources>AssemblyConnectorMediaStore.assembly</semanticResources>
+  <semanticResources>ProvidedAppServerRoleMediaStore.assembly</semanticResources>
+  <semanticResources>AssemblyConnectorSound.assembly</semanticResources>
+  <semanticResources>AssemblyContextDigitalWatermarking.assembly</semanticResources>
+  <semanticResources>ProvidedDigitalWatermarkingRoleSound.assembly</semanticResources>
+  <semanticResources>ComponentDBCache.repository</semanticResources>
+  <semanticResources>ComponentDigitalWatermarking.repository</semanticResources>
+  <semanticResources>ComponentMediaManager.repository</semanticResources>
+  <semanticResources>ComponentPoolingAudioDB.repository</semanticResources>
+  <semanticResources>ComponentWebGUI.repository</semanticResources>
+  <semanticResources>CompositeComponentAppServer.repository</semanticResources>
+  <semanticResources>DelegationConnectorProvidingAppServer.assembly</semanticResources>
+  <semanticResources>DelegationConnectorProvidingSystem.assembly</semanticResources>
+  <semanticResources>MainSystem.assembly</semanticResources>
+  <semanticResources>DelegationConnectorRequiringAppServer.assembly</semanticResources>
+  <semanticResources>HTTPService.repository</semanticResources>
+  <semanticResources>InterfaceHTTP.repository</semanticResources>
+  <semanticResources>MainAllocation.allocation</semanticResources>
+  <semanticResources>SystemEnvironment.environment</semanticResources>
+  <semanticResources>MainRepository.repository</semanticResources>
+  <semanticResources>ProvidedMediaManagerRoleMediaStore.assembly</semanticResources>
+  <semanticResources>ProvidedWebGUIRoleHTTP.assembly</semanticResources>
+  <semanticResources>SignatureAddFile.types</semanticResources>
+  <semanticResources>SignatureDownload.types</semanticResources>
+  <semanticResources>SignatureHTTPDownload.types</semanticResources>
+  <semanticResources>SignatureHTTPUpload.types</semanticResources>
+  <semanticResources>SignatureQueryDB.types</semanticResources>
+  <semanticResources>SignatureUpload.types</semanticResources>
+  <semanticResources>SignatureWatermark.types</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" uid="_frifQJwMEem2Tc1wwuCAIA">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>
