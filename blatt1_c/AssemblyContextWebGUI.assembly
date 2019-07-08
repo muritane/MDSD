@@ -2,32 +2,6 @@
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="WebGUI">
   <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
   <providedRole name="ProvidedHTTP"/>
-  <component name="WebGUI">
-    <providedInterface name="HTTP">
-      <signature name="HTTPDownload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="HTTPUpload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
-    <providedService name="HTTP">
-      <correspondingSignature name="HTTPDownload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </correspondingSignature>
-      <correspondingSignature name="HTTPUpload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </correspondingSignature>
-    </providedService>
-    <requiredInterface href="InterfaceMediaStore.repository#/"/>
-    <requiredService href="MediaStoreService.repository#/"/>
-    <behaviourDescription>
-      <calledServices href="MediaStoreService.repository#/"/>
-    </behaviourDescription>
-  </component>
+  <component href="MainRepository.repository#//@Components.4"/>
   <allocationContext href="AllocationContextWebGUI.allocation#/"/>
 </assembly:AssemblyContext>

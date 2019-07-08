@@ -1,13 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:repository="http://www.example.org/blatt1/repository">
-  <Components href="ComponentDBCache.repository#/"/>
-  <Components href="ComponentDigitalWatermarking.repository#/"/>
-  <Components href="ComponentMediaManager.repository#/"/>
-  <Components href="ComponentPoolingAudioDB.repository#/"/>
-  <Components href="ComponentWebGUI.repository#/"/>
-  <Components href="CompositeComponentAppServer.repository#/"/>
-  <Interfaces href="InterfaceAudioDB.repository#/"/>
-  <Interfaces href="InterfaceHTTP.repository#/"/>
-  <Interfaces href="InterfaceMediaStore.repository#/"/>
-  <Interfaces href="InterfaceSound.repository#/"/>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://www.example.org/blatt1/repository">
+  <Components name="DigitalWatermarking">
+    <providedInterface name="Sound">
+      <signature name="watermark">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="Sound">
+      <correspondingSignature name="watermark">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <behaviourDescription/>
+  </Components>
+  <Components requiredService="//@Components.1/@providedService.0" name="DBCache">
+    <providedInterface name="AudioDB">
+      <signature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="AudioDB">
+      <correspondingSignature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <behaviourDescription>
+      <calledServices href="AudioDBService.repository#/"/>
+    </behaviourDescription>
+  </Components>
+  <Components name="MediaManager">
+    <providedInterface name="MediaStore">
+      <signature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="MediaStore">
+      <correspondingSignature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <requiredInterface href="InterfaceSound.repository#/"/>
+    <requiredService href="AudioDBService.repository#/"/>
+    <requiredService href="SoundService.repository#/"/>
+    <behaviourDescription>
+      <calledServices href="AudioDBService.repository#/"/>
+      <calledServices href="SoundService.repository#/"/>
+    </behaviourDescription>
+  </Components>
+  <Components name="PoolingAudioDB">
+    <providedInterface name="AudioDB">
+      <signature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="AudioDB">
+      <correspondingSignature name="addFile">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="queryDB">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <behaviourDescription/>
+  </Components>
+  <Components name="WebGUI">
+    <providedInterface name="HTTP">
+      <signature name="HTTPDownload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="HTTPUpload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="HTTP">
+      <correspondingSignature name="HTTPDownload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="HTTPUpload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceMediaStore.repository#/"/>
+    <requiredService href="MediaStoreService.repository#/"/>
+    <behaviourDescription>
+      <calledServices href="MediaStoreService.repository#/"/>
+    </behaviourDescription>
+  </Components>
+  <Components xsi:type="repository:CompositeComponent" name="MediaStore">
+    <providedInterface name="MediaStore">
+      <signature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
+    <providedService name="MediaStore">
+      <correspondingSignature name="download">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+      <correspondingSignature name="upload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </correspondingSignature>
+    </providedService>
+    <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <requiredService href="AudioDBService.repository#/"/>
+    <behaviourDescription>
+      <calledServices href="AudioDBService.repository#/"/>
+    </behaviourDescription>
+    <encapsulatedAssemblyContext component="//@Components.2" name="MediaManager">
+      <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
+      <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
+      <providedRole/>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext component="//@Components.0" name="DigitalWatermarking">
+      <providedRole/>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext component="//@Components.1" name="DBCache">
+      <requiredRole href="RoleRequiredAudioDB.assembly#/"/>
+      <providedRole/>
+    </encapsulatedAssemblyContext>
+  </Components>
+  <Interfaces name="AudioDB">
+    <signature name="addFile">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+    <signature name="queryDB">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+  </Interfaces>
+  <Interfaces name="HTTP">
+    <signature name="HTTPDownload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+    <signature name="HTTPUpload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+  </Interfaces>
+  <Interfaces name="MediaStore">
+    <signature name="upload">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+    <signature name="download">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+  </Interfaces>
+  <Interfaces name="Sound">
+    <signature name="watermark">
+      <returnType href="My.types#/"/>
+      <parameterType href="My.types#/"/>
+    </signature>
+  </Interfaces>
 </repository:Repository>

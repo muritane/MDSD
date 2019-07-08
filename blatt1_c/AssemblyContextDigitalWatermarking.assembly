@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="DigitalWatermarking">
   <providedRole name="ProvidedSound"/>
-  <component name="DigitalWatermarking">
-    <providedInterface name="Sound">
-      <signature name="watermark">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
-    <providedService name="Sound">
-      <correspondingSignature name="watermark">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </correspondingSignature>
-    </providedService>
-    <behaviourDescription/>
-  </component>
+  <component href="MainRepository.repository#//@Components.0"/>
 </assembly:AssemblyContext>

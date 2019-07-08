@@ -33,12 +33,6 @@
     <semanticResources>AssemblyConnectorSound.assembly</semanticResources>
     <semanticResources>AssemblyContextDigitalWatermarking.assembly</semanticResources>
     <semanticResources>ProvidedDigitalWatermarkingRoleSound.assembly</semanticResources>
-    <semanticResources>ComponentDBCache.repository</semanticResources>
-    <semanticResources>ComponentDigitalWatermarking.repository</semanticResources>
-    <semanticResources>ComponentMediaManager.repository</semanticResources>
-    <semanticResources>ComponentPoolingAudioDB.repository</semanticResources>
-    <semanticResources>ComponentWebGUI.repository</semanticResources>
-    <semanticResources>CompositeComponentAppServer.repository</semanticResources>
     <semanticResources>DelegationConnectorProvidingAppServer.assembly</semanticResources>
     <semanticResources>DelegationConnectorProvidingSystem.assembly</semanticResources>
     <semanticResources>MainSystem.assembly</semanticResources>
@@ -2834,192 +2828,144 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a4p4cKGFEemrvowXvXYnAQ" name="MediaStore" outgoingEdges="_a5kecKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:CompositeComponent" href="AssemblyContextAppServer.assembly#//@component"/>
-      <semanticElements xmi:type="repository:CompositeComponent" href="AssemblyContextAppServer.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a4vYAKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a403kKGFEemrvowXvXYnAQ" name="MediaManager" outgoingEdges="_a5kedaGFEemrvowXvXYnAQ" incomingEdges="_a5pW8KGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a403kaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a403k6GFEemrvowXvXYnAQ" name="DigitalWatermarking" outgoingEdges="_a5keeqGFEemrvowXvXYnAQ" incomingEdges="_a5pW9aGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a403lKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a403lqGFEemrvowXvXYnAQ" name="DBCache" outgoingEdges="_a5lFhKGFEemrvowXvXYnAQ" incomingEdges="_a5pW-qGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a403l6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a41eoaGFEemrvowXvXYnAQ" name="PoolingAudioDB" outgoingEdges="_a5lFiaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextPoolingAudioDB.assembly#//@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextPoolingAudioDB.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a41eoqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a41epKGFEemrvowXvXYnAQ" name="WebGUI" outgoingEdges="_a5lFjqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextWebGUI.assembly#//@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextWebGUI.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a41epaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42FsaGFEemrvowXvXYnAQ" name="DBCache" outgoingEdges="_a5lskKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextDBCache.assembly#//@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextDBCache.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42FsqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42FtKGFEemrvowXvXYnAQ" name="MediaManager" outgoingEdges="_a5lslaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextMediaManager.assembly#//@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextMediaManager.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42FtaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42Ft6GFEemrvowXvXYnAQ" name="DigitalWatermarking" outgoingEdges="_a5lsmqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="AssemblyContextDigitalWatermarking.assembly#//@component"/>
-      <semanticElements xmi:type="repository:Component" href="AssemblyContextDigitalWatermarking.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42FuKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42swKGFEemrvowXvXYnAQ" name="MediaManager" outgoingEdges="_a5lsn6GFEemrvowXvXYnAQ" incomingEdges="_a5p-AKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component"/>
-      <semanticElements xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42swaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42sw6GFEemrvowXvXYnAQ" name="DigitalWatermarking" outgoingEdges="_a5mToqGFEemrvowXvXYnAQ" incomingEdges="_a5p-BaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component"/>
-      <semanticElements xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42sxKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42sxqGFEemrvowXvXYnAQ" name="DBCache" outgoingEdges="_a5mTp6GFEemrvowXvXYnAQ" incomingEdges="_a5p-CqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component"/>
-      <semanticElements xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a42sx6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a42syaGFEemrvowXvXYnAQ" name="MediaStore" incomingEdges="_a5p-D6GFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:CompositeComponent" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component"/>
-      <semanticElements xmi:type="repository:CompositeComponent" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a43T0KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a43T0qGFEemrvowXvXYnAQ" name="PoolingAudioDB" outgoingEdges="_a5mTrKGFEemrvowXvXYnAQ" incomingEdges="_a5qlEKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component"/>
-      <semanticElements xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a43T06GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a43T1aGFEemrvowXvXYnAQ" name="WebGUI" outgoingEdges="_a5mTsaGFEemrvowXvXYnAQ" incomingEdges="_a5qlFaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component"/>
-      <semanticElements xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a43T1qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="114,159,207">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Component']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a4364KGFEemrvowXvXYnAQ" name="MediaStore" outgoingEdges="_a5XqIKGFEemrvowXvXYnAQ _a5b7kqGFEemrvowXvXYnAQ" incomingEdges="_a5kecKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a4364aGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a43646GFEemrvowXvXYnAQ" name="MediaStore" outgoingEdges="_a5cioqGFEemrvowXvXYnAQ _a5cip6GFEemrvowXvXYnAQ" incomingEdges="_a5kedaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a4365KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a44h8KGFEemrvowXvXYnAQ" name="Sound" outgoingEdges="_a5cirKGFEemrvowXvXYnAQ" incomingEdges="_a5keeqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a44h8aGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a44h86GFEemrvowXvXYnAQ" name="AudioDB" outgoingEdges="_a5dJsqGFEemrvowXvXYnAQ _a5dJt6GFEemrvowXvXYnAQ" incomingEdges="_a5lFhKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a44h9KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a44h9qGFEemrvowXvXYnAQ" name="AudioDB" outgoingEdges="_a5dJvKGFEemrvowXvXYnAQ _a5dwwKGFEemrvowXvXYnAQ" incomingEdges="_a5lFiaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a44h96GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a45JAKGFEemrvowXvXYnAQ" name="HTTP" outgoingEdges="_a5dwxaGFEemrvowXvXYnAQ _a5dwyqGFEemrvowXvXYnAQ" incomingEdges="_a5lFjqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a45JAaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a45JA6GFEemrvowXvXYnAQ" name="AudioDB" outgoingEdges="_a5dwz6GFEemrvowXvXYnAQ _a5eX0aGFEemrvowXvXYnAQ" incomingEdges="_a5lskKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a45JBKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a45JBqGFEemrvowXvXYnAQ" name="MediaStore" outgoingEdges="_a5eX1qGFEemrvowXvXYnAQ _a5eX26GFEemrvowXvXYnAQ" incomingEdges="_a5lslaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a45JB6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a45JCaGFEemrvowXvXYnAQ" name="Sound" outgoingEdges="_a5eX4KGFEemrvowXvXYnAQ" incomingEdges="_a5lsmqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a45JCqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
@@ -3074,40 +3020,30 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a46XKaGFEemrvowXvXYnAQ" name="MediaStore" outgoingEdges="_a5hbJaGFEemrvowXvXYnAQ _a5hbKqGFEemrvowXvXYnAQ" incomingEdges="_a5lsn6GFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a46-MKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a46-MqGFEemrvowXvXYnAQ" name="Sound" outgoingEdges="_a5hbL6GFEemrvowXvXYnAQ" incomingEdges="_a5mToqGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a46-M6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a46-NaGFEemrvowXvXYnAQ" name="AudioDB" outgoingEdges="_a5iCMKGFEemrvowXvXYnAQ _a5iCNaGFEemrvowXvXYnAQ" incomingEdges="_a5mTp6GFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a46-NqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a46-OKGFEemrvowXvXYnAQ" name="AudioDB" outgoingEdges="_a5iCOqGFEemrvowXvXYnAQ _a5iCP6GFEemrvowXvXYnAQ" incomingEdges="_a5mTrKGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a46-OaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a47lQaGFEemrvowXvXYnAQ" name="HTTP" outgoingEdges="_a5ipQKGFEemrvowXvXYnAQ _a5ipRaGFEemrvowXvXYnAQ" incomingEdges="_a5mTsaGFEemrvowXvXYnAQ" width="10" height="5" resizeKind="NSEW">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
-      <semanticElements xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a47lQqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" width="10" height="5" color="138,226,52">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Interface']/@style"/>
       </ownedStyle>
@@ -3130,24 +3066,18 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a48zYqGFEemrvowXvXYnAQ" incomingEdges="_a5m6sqGFEemrvowXvXYnAQ" width="5" height="5" resizeKind="NSEW">
-      <target xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@providedRole.0"/>
-      <semanticElements xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@providedRole.0"/>
       <ownedStyle xmi:type="diagram:Lozenge" uid="_a48zY6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="138,226,52">
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a49acaGFEemrvowXvXYnAQ" incomingEdges="_a5nhwqGFEemrvowXvXYnAQ" width="5" height="5" resizeKind="NSEW">
-      <target xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@providedRole.0"/>
-      <semanticElements xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@providedRole.0"/>
       <ownedStyle xmi:type="diagram:Lozenge" uid="_a49acqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="138,226,52">
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a49adKGFEemrvowXvXYnAQ" incomingEdges="_a5nhx6GFEemrvowXvXYnAQ" width="5" height="5" resizeKind="NSEW">
-      <target xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@providedRole.0"/>
-      <semanticElements xmi:type="assembly:Role" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@providedRole.0"/>
       <ownedStyle xmi:type="diagram:Lozenge" uid="_a49adaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="138,226,52">
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']/@style"/>
       </ownedStyle>
@@ -3242,112 +3172,84 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Role']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a4_2tKGFEemrvowXvXYnAQ" name="upload" incomingEdges="_a5XqIKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5AdwKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5AdwqGFEemrvowXvXYnAQ" name="download" incomingEdges="_a5b7kqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Adw6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5AdxaGFEemrvowXvXYnAQ" name="download" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5AdxqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5AdyKGFEemrvowXvXYnAQ" name="upload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5AdyaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5BE0aGFEemrvowXvXYnAQ" name="upload" incomingEdges="_a5cioqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5BE0qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5BE1KGFEemrvowXvXYnAQ" name="download" incomingEdges="_a5cip6GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5BE1aGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5BE16GFEemrvowXvXYnAQ" name="download" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5BE2KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Br4aGFEemrvowXvXYnAQ" name="upload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Br4qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Br5KGFEemrvowXvXYnAQ" name="watermark" incomingEdges="_a5cirKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Br5aGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Br56GFEemrvowXvXYnAQ" name="watermark" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Br6KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Br6qGFEemrvowXvXYnAQ" name="addFile" incomingEdges="_a5dJsqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5CS8KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5CS8qGFEemrvowXvXYnAQ" name="queryDB" incomingEdges="_a5dJt6GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5CS86GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5CS9aGFEemrvowXvXYnAQ" name="addFile" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5CS9qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5CS-KGFEemrvowXvXYnAQ" name="queryDB" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5C6AKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
@@ -3402,64 +3304,48 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EIIaGFEemrvowXvXYnAQ" name="addFile" incomingEdges="_a5dJvKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EIIqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EIJKGFEemrvowXvXYnAQ" name="queryDB" incomingEdges="_a5dwwKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EIJaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EIJ6GFEemrvowXvXYnAQ" name="addFile" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EIKKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EvMKGFEemrvowXvXYnAQ" name="queryDB" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EvMaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EvM6GFEemrvowXvXYnAQ" name="HTTPDownload" incomingEdges="_a5dwxaGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EvNKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EvNqGFEemrvowXvXYnAQ" name="HTTPUpload" incomingEdges="_a5dwyqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EvN6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5EvOaGFEemrvowXvXYnAQ" name="HTTPDownload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5EvOqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5FWQaGFEemrvowXvXYnAQ" name="HTTPUpload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextWebGUI.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5FWQqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
@@ -3498,80 +3384,60 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5F9VqGFEemrvowXvXYnAQ" name="addFile" incomingEdges="_a5dwz6GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5F9V6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5F9WaGFEemrvowXvXYnAQ" name="queryDB" incomingEdges="_a5eX0aGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5GkYKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5GkYqGFEemrvowXvXYnAQ" name="addFile" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5GkY6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5GkZaGFEemrvowXvXYnAQ" name="queryDB" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDBCache.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5GkZqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5GkaKGFEemrvowXvXYnAQ" name="upload" incomingEdges="_a5eX1qGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5GkaaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5HLcKGFEemrvowXvXYnAQ" name="download" incomingEdges="_a5eX26GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5HLcaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5HLc6GFEemrvowXvXYnAQ" name="download" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5HLdKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5HLdqGFEemrvowXvXYnAQ" name="upload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextMediaManager.assembly#//@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5HLd6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5HLeaGFEemrvowXvXYnAQ" name="watermark" incomingEdges="_a5eX4KGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5HLeqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5HygKGFEemrvowXvXYnAQ" name="watermark" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5HygaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
@@ -3754,160 +3620,120 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Lc46GFEemrvowXvXYnAQ" name="upload" incomingEdges="_a5hbJaGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Lc5KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Lc5qGFEemrvowXvXYnAQ" name="download" incomingEdges="_a5hbKqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Lc56GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Lc6aGFEemrvowXvXYnAQ" name="download" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5Lc6qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5Lc7KGFEemrvowXvXYnAQ" name="upload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MD8KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MD8qGFEemrvowXvXYnAQ" name="watermark" incomingEdges="_a5hbL6GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MD86GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MD9aGFEemrvowXvXYnAQ" name="watermark" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MD9qGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MD-KGFEemrvowXvXYnAQ" name="addFile" incomingEdges="_a5iCMKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MD-aGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MD-6GFEemrvowXvXYnAQ" name="queryDB" incomingEdges="_a5iCNaGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MD_KGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MrAaGFEemrvowXvXYnAQ" name="addFile" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MrAqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MrBKGFEemrvowXvXYnAQ" name="queryDB" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MrBaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MrB6GFEemrvowXvXYnAQ" name="download" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MrCKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5MrCqGFEemrvowXvXYnAQ" name="upload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5MrC6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5NSEaGFEemrvowXvXYnAQ" name="addFile" incomingEdges="_a5iCOqGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5NSEqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5NSFKGFEemrvowXvXYnAQ" name="queryDB" incomingEdges="_a5iCP6GFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5NSFaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5NSF6GFEemrvowXvXYnAQ" name="addFile" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5NSGKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5N5IKGFEemrvowXvXYnAQ" name="queryDB" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5N5IaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5N5I6GFEemrvowXvXYnAQ" name="HTTPDownload" incomingEdges="_a5ipQKGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5N5JKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5N5JqGFEemrvowXvXYnAQ" name="HTTPUpload" incomingEdges="_a5ipRaGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0/@signature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5N5J6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5N5KaGFEemrvowXvXYnAQ" name="HTTPDownload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5N5KqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5OgMKGFEemrvowXvXYnAQ" name="HTTPUpload" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
-      <semanticElements xmi:type="Types:Signature" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedService.0/@correspondingSignature.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5OgMaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="204,242,166">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']/@style"/>
       </ownedStyle>
@@ -3946,24 +3772,18 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5PHQaGFEemrvowXvXYnAQ" name="MediaManager" outgoingEdges="_a5m6sqGFEemrvowXvXYnAQ _a5pW8KGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0"/>
-      <semanticElements xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5PuUKGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="173,127,168">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5PuUqGFEemrvowXvXYnAQ" name="DigitalWatermarking" outgoingEdges="_a5nhwqGFEemrvowXvXYnAQ _a5pW9aGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1"/>
-      <semanticElements xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5PuU6GFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="173,127,168">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5PuVaGFEemrvowXvXYnAQ" name="DBCache" outgoingEdges="_a5nhx6GFEemrvowXvXYnAQ _a5pW-qGFEemrvowXvXYnAQ" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2"/>
-      <semanticElements xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5PuVqGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="173,127,168">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']/@style"/>
       </ownedStyle>
@@ -4002,8 +3822,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" uid="_a5QVaKGFEemrvowXvXYnAQ" name="ApplicationServerCompositeAssemblyContext" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="assembly:AssemblyContext" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@encapsulatedAssemblyContext.0"/>
-      <semanticElements xmi:type="assembly:AssemblyContext" href="MainSystem.assembly#//@encapsulatedAssemblyContext.0/@component/@encapsulatedAssemblyContext.0"/>
       <ownedStyle xmi:type="diagram:Square" uid="_a5QVaaGFEemrvowXvXYnAQ" labelSize="12" labelPosition="node" color="173,127,168">
         <description xmi:type="style:SquareDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']/@style"/>
       </ownedStyle>
@@ -4026,7 +3844,6 @@
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@nodeMappings[name='AssemblyContext']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5XqIKGFEemrvowXvXYnAQ" sourceNode="_a4364KGFEemrvowXvXYnAQ" targetNode="_a4_2tKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5bUgKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5bUgaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4034,7 +3851,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5b7kqGFEemrvowXvXYnAQ" sourceNode="_a4364KGFEemrvowXvXYnAQ" targetNode="_a5AdwqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5b7k6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5b7lKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4042,7 +3858,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5cioqGFEemrvowXvXYnAQ" sourceNode="_a43646GFEemrvowXvXYnAQ" targetNode="_a5BE0aGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5cio6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5cipKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4050,7 +3865,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5cip6GFEemrvowXvXYnAQ" sourceNode="_a43646GFEemrvowXvXYnAQ" targetNode="_a5BE1KGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5ciqKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5ciqaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4058,7 +3872,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5cirKGFEemrvowXvXYnAQ" sourceNode="_a44h8KGFEemrvowXvXYnAQ" targetNode="_a5Br5KGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5ciraGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5cirqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4066,7 +3879,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dJsqGFEemrvowXvXYnAQ" sourceNode="_a44h86GFEemrvowXvXYnAQ" targetNode="_a5Br6qGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dJs6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dJtKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4074,7 +3886,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dJt6GFEemrvowXvXYnAQ" sourceNode="_a44h86GFEemrvowXvXYnAQ" targetNode="_a5CS8qGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dJuKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dJuaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4082,7 +3893,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dJvKGFEemrvowXvXYnAQ" sourceNode="_a44h9qGFEemrvowXvXYnAQ" targetNode="_a5EIIaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dJvaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dJvqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4090,7 +3900,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dwwKGFEemrvowXvXYnAQ" sourceNode="_a44h9qGFEemrvowXvXYnAQ" targetNode="_a5EIJKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextPoolingAudioDB.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dwwaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dwwqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4098,7 +3907,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dwxaGFEemrvowXvXYnAQ" sourceNode="_a45JAKGFEemrvowXvXYnAQ" targetNode="_a5EvM6GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dwxqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dwx6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4106,7 +3914,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dwyqGFEemrvowXvXYnAQ" sourceNode="_a45JAKGFEemrvowXvXYnAQ" targetNode="_a5EvNqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextWebGUI.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dwy6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dwzKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4114,7 +3921,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5dwz6GFEemrvowXvXYnAQ" sourceNode="_a45JA6GFEemrvowXvXYnAQ" targetNode="_a5F9VqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5dw0KGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5dw0aGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4122,7 +3928,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5eX0aGFEemrvowXvXYnAQ" sourceNode="_a45JA6GFEemrvowXvXYnAQ" targetNode="_a5F9WaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextDBCache.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5eX0qGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5eX06GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4130,7 +3935,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5eX1qGFEemrvowXvXYnAQ" sourceNode="_a45JBqGFEemrvowXvXYnAQ" targetNode="_a5GkaKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5eX16GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5eX2KGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4138,7 +3942,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5eX26GFEemrvowXvXYnAQ" sourceNode="_a45JBqGFEemrvowXvXYnAQ" targetNode="_a5HLcKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextMediaManager.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5eX3KGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5eX3aGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4146,7 +3949,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5eX4KGFEemrvowXvXYnAQ" sourceNode="_a45JCaGFEemrvowXvXYnAQ" targetNode="_a5HLeaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="AssemblyContextDigitalWatermarking.assembly#//@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5eX4aGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5eX4qGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4242,7 +4044,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5hbJaGFEemrvowXvXYnAQ" sourceNode="_a46XKaGFEemrvowXvXYnAQ" targetNode="_a5Lc46GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5hbJqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5hbJ6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4250,7 +4051,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5hbKqGFEemrvowXvXYnAQ" sourceNode="_a46XKaGFEemrvowXvXYnAQ" targetNode="_a5Lc5qGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5hbK6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5hbLKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4258,7 +4058,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5hbL6GFEemrvowXvXYnAQ" sourceNode="_a46-MqGFEemrvowXvXYnAQ" targetNode="_a5MD8qGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5hbMKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5hbMaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4266,7 +4065,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5iCMKGFEemrvowXvXYnAQ" sourceNode="_a46-NaGFEemrvowXvXYnAQ" targetNode="_a5MD-KGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5iCMaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5iCMqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4274,7 +4072,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5iCNaGFEemrvowXvXYnAQ" sourceNode="_a46-NaGFEemrvowXvXYnAQ" targetNode="_a5MD-6GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5iCNqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5iCN6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4282,7 +4079,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5iCOqGFEemrvowXvXYnAQ" sourceNode="_a46-OKGFEemrvowXvXYnAQ" targetNode="_a5NSEaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5iCO6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5iCPKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4290,7 +4086,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5iCP6GFEemrvowXvXYnAQ" sourceNode="_a46-OKGFEemrvowXvXYnAQ" targetNode="_a5NSFKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5iCQKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5iCQaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4298,7 +4093,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5ipQKGFEemrvowXvXYnAQ" sourceNode="_a47lQaGFEemrvowXvXYnAQ" targetNode="_a5N5I6GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5ipQaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5ipQqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4306,7 +4100,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5ipRaGFEemrvowXvXYnAQ" sourceNode="_a47lQaGFEemrvowXvXYnAQ" targetNode="_a5N5JqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Interface" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component/@providedInterface.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5ipRqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5ipR6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4330,7 +4123,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='Signature']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5kecKGFEemrvowXvXYnAQ" sourceNode="_a4p4cKGFEemrvowXvXYnAQ" targetNode="_a4364KGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:CompositeComponent" href="AssemblyContextAppServer.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5kecaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5kecqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4338,7 +4130,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5kedaGFEemrvowXvXYnAQ" sourceNode="_a403kKGFEemrvowXvXYnAQ" targetNode="_a43646GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5kedqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5ked6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4346,7 +4137,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5keeqGFEemrvowXvXYnAQ" sourceNode="_a403k6GFEemrvowXvXYnAQ" targetNode="_a44h8KGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lFgKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lFgaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4354,7 +4144,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lFhKGFEemrvowXvXYnAQ" sourceNode="_a403lqGFEemrvowXvXYnAQ" targetNode="_a44h86GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lFhaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lFhqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4362,7 +4151,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lFiaGFEemrvowXvXYnAQ" sourceNode="_a41eoaGFEemrvowXvXYnAQ" targetNode="_a44h9qGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextPoolingAudioDB.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lFiqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lFi6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4370,7 +4158,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lFjqGFEemrvowXvXYnAQ" sourceNode="_a41epKGFEemrvowXvXYnAQ" targetNode="_a45JAKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextWebGUI.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lFj6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lFkKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4378,7 +4165,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lskKGFEemrvowXvXYnAQ" sourceNode="_a42FsaGFEemrvowXvXYnAQ" targetNode="_a45JA6GFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextDBCache.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lskaGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lskqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4386,7 +4172,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lslaGFEemrvowXvXYnAQ" sourceNode="_a42FtKGFEemrvowXvXYnAQ" targetNode="_a45JBqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextMediaManager.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lslqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lsl6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4394,7 +4179,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lsmqGFEemrvowXvXYnAQ" sourceNode="_a42Ft6GFEemrvowXvXYnAQ" targetNode="_a45JCaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="AssemblyContextDigitalWatermarking.assembly#//@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lsm6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lsnKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4402,7 +4186,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5lsn6GFEemrvowXvXYnAQ" sourceNode="_a42swKGFEemrvowXvXYnAQ" targetNode="_a46XKaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.0/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5lsoKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5lsoaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4410,7 +4193,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5mToqGFEemrvowXvXYnAQ" sourceNode="_a42sw6GFEemrvowXvXYnAQ" targetNode="_a46-MqGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5mTo6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5mTpKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4418,7 +4200,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5mTp6GFEemrvowXvXYnAQ" sourceNode="_a42sxqGFEemrvowXvXYnAQ" targetNode="_a46-NaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="CompositeComponentAppServer.repository#//@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5mTqKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5mTqaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4426,7 +4207,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5mTrKGFEemrvowXvXYnAQ" sourceNode="_a43T0qGFEemrvowXvXYnAQ" targetNode="_a46-OKGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.1/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5mTraGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5mTrqGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4434,7 +4214,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5mTsaGFEemrvowXvXYnAQ" sourceNode="_a43T1aGFEemrvowXvXYnAQ" targetNode="_a47lQaGFEemrvowXvXYnAQ">
-      <target xmi:type="repository:Component" href="MainSystem.assembly#//@encapsulatedAssemblyContext.2/@component"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5mTsqGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5mTs6GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4442,7 +4221,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedInterface']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5m6sqGFEemrvowXvXYnAQ" sourceNode="_a5PHQaGFEemrvowXvXYnAQ" targetNode="_a48zYqGFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5m6s6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5m6tKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4450,7 +4228,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5nhwqGFEemrvowXvXYnAQ" sourceNode="_a5PuUqGFEemrvowXvXYnAQ" targetNode="_a49acaGFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5nhw6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5nhxKGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4458,7 +4235,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5nhx6GFEemrvowXvXYnAQ" sourceNode="_a5PuVaGFEemrvowXvXYnAQ" targetNode="_a49adKGFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5nhyKGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5nhyaGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4514,7 +4290,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='providedRole']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5pW8KGFEemrvowXvXYnAQ" sourceNode="_a5PHQaGFEemrvowXvXYnAQ" targetNode="_a403kKGFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5pW8aGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='assembledComponent']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5pW8qGFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4522,7 +4297,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='assembledComponent']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5pW9aGFEemrvowXvXYnAQ" sourceNode="_a5PuUqGFEemrvowXvXYnAQ" targetNode="_a403k6GFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5pW9qGFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='assembledComponent']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5pW96GFEemrvowXvXYnAQ" labelSize="12"/>
@@ -4530,7 +4304,6 @@
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='assembledComponent']"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" uid="_a5pW-qGFEemrvowXvXYnAQ" sourceNode="_a5PuVaGFEemrvowXvXYnAQ" targetNode="_a403lqGFEemrvowXvXYnAQ">
-      <target xmi:type="assembly:AssemblyContext" href="AssemblyContextAppServer.assembly#//@component/@encapsulatedAssemblyContext.2"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" uid="_a5pW-6GFEemrvowXvXYnAQ" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Blatt5.project.design/description/project.odesign#//@ownedViewpoints[name='repository']/@ownedRepresentations[name='testdiagramm']/@defaultLayer/@edgeMappings[name='assembledComponent']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_a5pW_KGFEemrvowXvXYnAQ" labelSize="12"/>
