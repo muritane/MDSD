@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://www.example.org/blatt1/repository">
-  <Components name="DigitalWatermarking">
-    <providedInterface name="Sound">
-      <signature name="watermark">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components providedInterface="//@Interfaces.3" name="DigitalWatermarking">
     <providedService name="Sound">
       <correspondingSignature name="watermark">
         <returnType href="My.types#/"/>
@@ -15,17 +9,7 @@
     </providedService>
     <behaviourDescription/>
   </Components>
-  <Components requiredService="//@Components.1/@providedService.0" name="DBCache">
-    <providedInterface name="AudioDB">
-      <signature name="addFile">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="queryDB">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components providedInterface="//@Interfaces.0" requiredInterface="//@Interfaces.0" requiredService="//@Components.1/@providedService.0" name="DBCache">
     <providedService name="AudioDB">
       <correspondingSignature name="addFile">
         <returnType href="My.types#/"/>
@@ -36,22 +20,11 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
-    <requiredInterface href="InterfaceAudioDB.repository#/"/>
     <behaviourDescription>
       <calledServices href="AudioDBService.repository#/"/>
     </behaviourDescription>
   </Components>
-  <Components name="MediaManager">
-    <providedInterface name="MediaStore">
-      <signature name="upload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="download">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components providedInterface="//@Interfaces.2" requiredInterface="//@Interfaces.3 //@Interfaces.0" name="MediaManager">
     <providedService name="MediaStore">
       <correspondingSignature name="download">
         <returnType href="My.types#/"/>
@@ -62,8 +35,6 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
-    <requiredInterface href="InterfaceAudioDB.repository#/"/>
-    <requiredInterface href="InterfaceSound.repository#/"/>
     <requiredService href="AudioDBService.repository#/"/>
     <requiredService href="SoundService.repository#/"/>
     <behaviourDescription>
@@ -71,17 +42,7 @@
       <calledServices href="SoundService.repository#/"/>
     </behaviourDescription>
   </Components>
-  <Components name="PoolingAudioDB">
-    <providedInterface name="AudioDB">
-      <signature name="addFile">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="queryDB">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components providedInterface="//@Interfaces.0" name="PoolingAudioDB">
     <providedService name="AudioDB">
       <correspondingSignature name="addFile">
         <returnType href="My.types#/"/>
@@ -94,17 +55,7 @@
     </providedService>
     <behaviourDescription/>
   </Components>
-  <Components name="WebGUI">
-    <providedInterface name="HTTP">
-      <signature name="HTTPDownload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="HTTPUpload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components providedInterface="//@Interfaces.1" requiredInterface="//@Interfaces.2" name="WebGUI">
     <providedService name="HTTP">
       <correspondingSignature name="HTTPDownload">
         <returnType href="My.types#/"/>
@@ -115,23 +66,12 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
-    <requiredInterface href="InterfaceMediaStore.repository#/"/>
     <requiredService href="MediaStoreService.repository#/"/>
     <behaviourDescription>
       <calledServices href="MediaStoreService.repository#/"/>
     </behaviourDescription>
   </Components>
-  <Components xsi:type="repository:CompositeComponent" name="MediaStore">
-    <providedInterface name="MediaStore">
-      <signature name="upload">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-      <signature name="download">
-        <returnType href="My.types#/"/>
-        <parameterType href="My.types#/"/>
-      </signature>
-    </providedInterface>
+  <Components xsi:type="repository:CompositeComponent" providedInterface="//@Interfaces.2" requiredInterface="//@Interfaces.0" name="MediaStore">
     <providedService name="MediaStore">
       <correspondingSignature name="download">
         <returnType href="My.types#/"/>
@@ -142,7 +82,6 @@
         <parameterType href="My.types#/"/>
       </correspondingSignature>
     </providedService>
-    <requiredInterface href="InterfaceAudioDB.repository#/"/>
     <requiredService href="AudioDBService.repository#/"/>
     <behaviourDescription>
       <calledServices href="AudioDBService.repository#/"/>
