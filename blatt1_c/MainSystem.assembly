@@ -1,76 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<assembly:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:assembly="http://www.example.org/blatt1/assembly" xmlns:repository="http://www.example.org/blatt1/repository">
+<assembly:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly">
   <encapsulatedAssemblyContext name="AppServer">
     <requiredRole href="RequiredAppServerRoleAudioDB.assembly#/"/>
-    <providedRole/>
-    <component xsi:type="repository:CompositeComponent" name="MediaStore">
-      <providedService name="MediaStore">
-        <correspondingSignature name="download">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-        <correspondingSignature name="upload">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-      </providedService>
-      <requiredInterface href="InterfaceAudioDB.repository#/"/>
-      <encapsulatedAssemblyContext name="ApplicationServerCompositeAssemblyContext"/>
-    </component>
+    <providedRole name="ProvidedMediaStore"/>
+    <component href="MainRepository.repository#//@Components.5"/>
+    <allocationContext href="AllocationContextAppServerComposite.allocation#/"/>
   </encapsulatedAssemblyContext>
   <encapsulatedAssemblyContext name="PoolingAudioDB">
-    <providedRole/>
-    <component name="PoolingAudioDB">
-      <providedInterface name="AudioDB">
-        <signature name="addFile">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </signature>
-        <signature name="queryDB">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </signature>
-      </providedInterface>
-      <providedService name="AudioDB">
-        <correspondingSignature name="addFile">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-        <correspondingSignature name="queryDB">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-      </providedService>
-    </component>
+    <providedRole name="ProvidedAudioDB"/>
+    <component href="MainRepository.repository#//@Components.3"/>
     <allocationContext href="AllocationContextPoolingAudioDB.allocation#/"/>
   </encapsulatedAssemblyContext>
   <encapsulatedAssemblyContext name="WebGUI">
     <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
-    <providedRole/>
-    <component name="WebGUI">
-      <providedInterface name="HTTP">
-        <signature name="HTTPDownload">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </signature>
-        <signature name="HTTPUpload">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </signature>
-      </providedInterface>
-      <providedService name="HTTP">
-        <correspondingSignature name="HTTPDownload">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-        <correspondingSignature name="HTTPUpload">
-          <returnType href="My.types#/"/>
-          <parameterType href="My.types#/"/>
-        </correspondingSignature>
-      </providedService>
-      <requiredInterface href="InterfaceMediaStore.repository#/"/>
-      <requiredService href="MediaStoreService.repository#/"/>
-    </component>
+    <providedRole name="ProvidedHTTP"/>
+    <component href="MainRepository.repository#//@Components.4"/>
     <allocationContext href="AllocationContextWebGUI.allocation#/"/>
   </encapsulatedAssemblyContext>
   <providedInterfaces name="HTTP">
