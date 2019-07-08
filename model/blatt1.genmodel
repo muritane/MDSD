@@ -29,10 +29,8 @@
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/CompositeComponent/encapsulatedAssemblyContext"/>
       </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Repository/Repository">
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Repository/Components"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Repository/Interfaces"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Repository/Components"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Repository/Interfaces"/>
       </genClasses>
       <nestedGenPackages prefix="Types" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Repository/Types">
         <genClasses ecoreClass="blatt1.ecore#//Repository/Types/List"/>
@@ -74,7 +72,8 @@
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/requiredRole"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/providedRole"/>
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/component"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/component"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Assembly/AssemblyContext/allocationContext"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Assembly/AssemblyContext/name"/>
@@ -105,7 +104,8 @@
     </nestedGenPackages>
     <nestedGenPackages prefix="Allocation" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Allocation">
       <genClasses ecoreClass="blatt1.ecore#//Allocation/AllocationContext">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/AllocationContext/targetContainer"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/AllocationContext/targetContainer"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/AllocationContext/allocatedAssemblyContext"/>
       </genClasses>
@@ -114,8 +114,7 @@
             ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/Allocation/System"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/Allocation/Environment"/>
-        <genFeatures notify="false" createChild="false" propertySortChoices="true"
-            ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/Allocation/AllocationContexts"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Allocation/Allocation/AllocationContexts"/>
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Environment" disposableProviderFactory="true" ecorePackage="blatt1.ecore#//Environment">
