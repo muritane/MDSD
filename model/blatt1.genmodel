@@ -16,7 +16,8 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute blatt1.ecore#//Repository/Service/name"/>
       </genClasses>
       <genClasses ecoreClass="blatt1.ecore#//Repository/Component">
-        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedInterface"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedInterface"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/providedService"/>
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference blatt1.ecore#//Repository/Component/requiredInterface"/>
