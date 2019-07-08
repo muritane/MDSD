@@ -147,17 +147,17 @@
     <behaviourDescription>
       <calledServices href="AudioDBService.repository#/"/>
     </behaviourDescription>
-    <encapsulatedAssemblyContext component="//@Components.2" name="MediaManager">
-      <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
-      <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
-      <providedRole/>
-    </encapsulatedAssemblyContext>
-    <encapsulatedAssemblyContext component="//@Components.0" name="DigitalWatermarking">
-      <providedRole/>
-    </encapsulatedAssemblyContext>
     <encapsulatedAssemblyContext component="//@Components.1" name="DBCache">
       <requiredRole href="RoleRequiredAudioDB.assembly#/"/>
       <providedRole/>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext component="//@Components.2" name="MediaManager">
+      <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
+      <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
+      <providedRole name="ProvidedMediaStore"/>
+    </encapsulatedAssemblyContext>
+    <encapsulatedAssemblyContext component="//@Components.0" name="DigitalWatermarking">
+      <providedRole name="ProvidedSound"/>
     </encapsulatedAssemblyContext>
   </Components>
   <Interfaces name="AudioDB">
