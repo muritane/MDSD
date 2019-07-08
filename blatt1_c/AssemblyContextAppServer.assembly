@@ -3,5 +3,5 @@
   <requiredRole href="RequiredAppServerRoleAudioDB.assembly#/"/>
   <providedRole name="ProvidedMediaStore"/>
   <component href="MainRepository.repository#//@Components.5"/>
-  <allocationContext href="AllocationContextAppServerComposite.allocation#/"/>
+  <allocationContext href="MainAllocation.allocation#//@AllocationContexts.0"/>
 </assembly:AssemblyContext>

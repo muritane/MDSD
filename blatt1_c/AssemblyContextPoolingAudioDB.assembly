@@ -2,5 +2,5 @@
 <assembly:AssemblyContext xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly" name="PoolingAudioDB">
   <providedRole name="ProvidedAudioDB"/>
   <component href="MainRepository.repository#//@Components.3"/>
-  <allocationContext href="AllocationContextPoolingAudioDB.allocation#/"/>
+  <allocationContext href="MainAllocation.allocation#//@AllocationContexts.1"/>
 </assembly:AssemblyContext>

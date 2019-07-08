@@ -3,5 +3,5 @@
   <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
   <providedRole name="ProvidedHTTP"/>
   <component href="MainRepository.repository#//@Components.4"/>
-  <allocationContext href="AllocationContextWebGUI.allocation#/"/>
+  <allocationContext href="MainAllocation.allocation#//@AllocationContexts.2"/>
 </assembly:AssemblyContext>

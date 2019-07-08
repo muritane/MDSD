@@ -2,7 +2,16 @@
 <allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://www.example.org/blatt1/allocation">
   <System href="MainSystem.assembly#/"/>
   <Environment href="SystemEnvironment.environment#/"/>
-  <AllocationContexts href="AllocationContextAppServerComposite.allocation#/"/>
-  <AllocationContexts href="AllocationContextPoolingAudioDB.allocation#/"/>
-  <AllocationContexts href="AllocationContextWebGUI.allocation#/"/>
+  <AllocationContexts>
+    <targetContainer href="ApplicationServer.environment#/"/>
+    <allocatedAssemblyContext href="AssemblyContextAppServer.assembly#/"/>
+  </AllocationContexts>
+  <AllocationContexts>
+    <targetContainer href="DatabaseServer.environment#/"/>
+    <allocatedAssemblyContext href="AssemblyContextPoolingAudioDB.assembly#/"/>
+  </AllocationContexts>
+  <AllocationContexts>
+    <targetContainer href="ApplicationServer.environment#/"/>
+    <allocatedAssemblyContext href="AssemblyContextWebGUI.assembly#/"/>
+  </AllocationContexts>
 </allocation:Allocation>
