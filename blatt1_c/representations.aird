@@ -4,12 +4,10 @@
     <semanticResources>AllocationContextAppServerComposite.allocation</semanticResources>
     <semanticResources>AssemblyContextAppServer.assembly</semanticResources>
     <semanticResources>RequiredAppServerRoleAudioDB.assembly</semanticResources>
-    <semanticResources>InterfaceAudioDB.repository</semanticResources>
     <semanticResources>AudioDBService.repository</semanticResources>
     <semanticResources>My.types</semanticResources>
     <semanticResources>RequiredMediaManagerRoleAudioDB.assembly</semanticResources>
     <semanticResources>RequiredMediaManagerRoleSound.assembly</semanticResources>
-    <semanticResources>InterfaceSound.repository</semanticResources>
     <semanticResources>SoundService.repository</semanticResources>
     <semanticResources>RoleRequiredAudioDB.assembly</semanticResources>
     <semanticResources>AllocationContextPoolingAudioDB.allocation</semanticResources>
@@ -20,7 +18,6 @@
     <semanticResources>AllocationContextWebGUI.allocation</semanticResources>
     <semanticResources>AssemblyContextWebGUI.assembly</semanticResources>
     <semanticResources>RequiredWebGUIRoleMediaStore.assembly</semanticResources>
-    <semanticResources>InterfaceMediaStore.repository</semanticResources>
     <semanticResources>MediaStoreService.repository</semanticResources>
     <semanticResources>AssemblyConnectorAudioDB1.assembly</semanticResources>
     <semanticResources>ProvidedPoolingAudioDBRoleAudioDB.assembly</semanticResources>
@@ -38,7 +35,6 @@
     <semanticResources>MainSystem.assembly</semanticResources>
     <semanticResources>DelegationConnectorRequiringAppServer.assembly</semanticResources>
     <semanticResources>HTTPService.repository</semanticResources>
-    <semanticResources>InterfaceHTTP.repository</semanticResources>
     <semanticResources>MainAllocation.allocation</semanticResources>
     <semanticResources>SystemEnvironment.environment</semanticResources>
     <semanticResources>MainRepository.repository</semanticResources>
