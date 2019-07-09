@@ -17,14 +17,4 @@
     <component href="MainRepository.repository#//@Components.4"/>
     <allocationContext href="AllocationContextWebGUI.allocation#/"/>
   </encapsulatedAssemblyContext>
-  <providedInterfaces name="HTTP">
-    <signature name="HTTPDownload">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </signature>
-    <signature name="HTTPUpload">
-      <returnType href="My.types#/"/>
-      <parameterType href="My.types#/"/>
-    </signature>
-  </providedInterfaces>
 </assembly:System>

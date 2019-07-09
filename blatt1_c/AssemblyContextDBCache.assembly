@@ -13,6 +13,16 @@
         <parameterType href="My.types#/"/>
       </signature>
     </providedInterface>
+    <providedInterface name="HTTP">
+      <signature name="HTTPDownload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+      <signature name="HTTPUpload">
+        <returnType href="My.types#/"/>
+        <parameterType href="My.types#/"/>
+      </signature>
+    </providedInterface>
     <providedService name="AudioDB">
       <correspondingSignature name="addFile">
         <returnType href="My.types#/"/>
@@ -24,6 +34,7 @@
       </correspondingSignature>
     </providedService>
     <requiredInterface href="InterfaceAudioDB.repository#/"/>
+    <requiredInterface href="#//@component/@providedInterface.0"/>
     <behaviourDescription>
       <calledServices href="AudioDBService.repository#/"/>
     </behaviourDescription>
