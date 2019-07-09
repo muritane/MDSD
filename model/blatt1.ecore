@@ -145,6 +145,8 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="Role">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="delegationConnectors"
+          upperBound="-1" eType="#//Assembly/DelegationConnector" containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="DelegationConnector">
       <eStructuralFeatures xsi:type="ecore:EReference" name="role" lowerBound="1"
