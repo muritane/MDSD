@@ -30,10 +30,7 @@
     <semanticResources>AssemblyConnectorSound.assembly</semanticResources>
     <semanticResources>AssemblyContextDigitalWatermarking.assembly</semanticResources>
     <semanticResources>ProvidedDigitalWatermarkingRoleSound.assembly</semanticResources>
-    <semanticResources>DelegationConnectorProvidingAppServer.assembly</semanticResources>
-    <semanticResources>DelegationConnectorProvidingSystem.assembly</semanticResources>
     <semanticResources>MainSystem.assembly</semanticResources>
-    <semanticResources>DelegationConnectorRequiringAppServer.assembly</semanticResources>
     <semanticResources>HTTPService.repository</semanticResources>
     <semanticResources>MainAllocation.allocation</semanticResources>
     <semanticResources>SystemEnvironment.environment</semanticResources>

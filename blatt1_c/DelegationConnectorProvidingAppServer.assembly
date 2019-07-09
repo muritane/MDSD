@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<assembly:DelegationConnector xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:assembly="http://www.example.org/blatt1/assembly">
-  <role href="MainRepository.repository#//@Components.5/@encapsulatedAssemblyContext.1/@providedRole.0"/>
-  <interface href="MainRepository.repository#//@Interfaces.2"/>
-</assembly:DelegationConnector>

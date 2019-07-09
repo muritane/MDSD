@@ -93,7 +93,9 @@
     <encapsulatedAssemblyContext component="//@Components.2" name="MediaManager">
       <requiredRole href="RequiredMediaManagerRoleAudioDB.assembly#/"/>
       <requiredRole href="RequiredMediaManagerRoleSound.assembly#/"/>
-      <providedRole name="ProvidedMediaStore"/>
+      <providedRole name="ProvidedMediaStore">
+        <delegationConnectors role="//@Components.5/@encapsulatedAssemblyContext.1/@providedRole.0" interface="//@Interfaces.2"/>
+      </providedRole>
     </encapsulatedAssemblyContext>
     <encapsulatedAssemblyContext component="//@Components.0" name="DigitalWatermarking">
       <providedRole name="ProvidedSound"/>
