@@ -13,7 +13,11 @@
   </encapsulatedAssemblyContext>
   <encapsulatedAssemblyContext name="WebGUI">
     <requiredRole href="RequiredWebGUIRoleMediaStore.assembly#/"/>
-    <providedRole name="ProvidedHTTP"/>
+    <providedRole name="ProvidedHTTP">
+      <delegationConnectors role="//@encapsulatedAssemblyContext.2/@providedRole.0">
+        <interface href="MainRepository.repository#//@Interfaces.1"/>
+      </delegationConnectors>
+    </providedRole>
     <component href="MainRepository.repository#//@Components.4"/>
     <allocationContext href="AllocationContextWebGUI.allocation#/"/>
   </encapsulatedAssemblyContext>
