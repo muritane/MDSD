@@ -1,3 +1,5 @@
+Dies sind unsere Ideen zu den OCL-constraints in Pseudocode
+
     context <Component>
     invariant ProvidedServiceSignature: 
 			self.providesInterface -> forAll(i | self.providesService-> exists(s | i.hasSignature->includes(s.corresponds)));

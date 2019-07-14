@@ -98,9 +98,11 @@
       </providedRole>
     </encapsulatedAssemblyContext>
     <encapsulatedAssemblyContext component="//@Components.0" name="DigitalWatermarking">
+      <requiredRole href="AssemblyContextDigitalWatermarking.assembly#//@providedRole.0"/>
       <providedRole name="ProvidedSound"/>
     </encapsulatedAssemblyContext>
   </Components>
+  <Components providedInterface="//@Interfaces.4" requiredInterface="//@Interfaces.5" name="BaumImpl"/>
   <Interfaces name="AudioDB">
     <signature name="addFile">
       <returnType href="My.types#/"/>
@@ -137,4 +139,6 @@
       <parameterType href="My.types#/"/>
     </signature>
   </Interfaces>
+  <Interfaces name="Baum"/>
+  <Interfaces name="Wasser"/>
 </repository:Repository>
